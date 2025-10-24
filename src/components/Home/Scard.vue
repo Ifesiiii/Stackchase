@@ -13,7 +13,7 @@ defineProps({
 
 
 <template>
-  <div class="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-300">
+  <div class="bg-white p-6 border-l border-[#BEBEBE] border-dashed hover:shadow-md transition-shadow duration-300">
     <h3 class="text-xl font-semibold text-[#131313] mb-3">
       {{ title }}
     </h3>

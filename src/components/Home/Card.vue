@@ -8,7 +8,7 @@ defineProps({
 
 
 <template>
-  <div class="bg-[#F1F2F6] p-8 rounded-lg hover:shadow-lg transition-shadow duration-300">
+  <div class="bg-[#F1F2F6] p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
     <!-- Icon -->
     <div class="mb-6">
       <slot name="icon">

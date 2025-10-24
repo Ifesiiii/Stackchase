@@ -18,7 +18,7 @@ import Card from './Card.vue';
           <img
             :src="office"
             alt="Modern office workspace"
-            class="w-full h-full object-cover"
+            class="w-full h-full rounded-lg object-contain"
           />
         </div>
 

@@ -52,7 +52,7 @@ const prevSlide = () => {
 
 
 <template>
-  <section class="bg-gray-50 py-20 px-8">
+  <section class="py-20 px-8">
     <div class="max-w-7xl mx-auto">
       <!-- Section Title -->
       <h2 class="text-4xl md:text-5xl font-semibold text-center text-[#131313] mb-12">
@@ -69,7 +69,7 @@ const prevSlide = () => {
         />
       </div>
 
-      <!-- Carousel Section -->
+      <!-- Slide image Section -->
       <div class="relative rounded-2xl overflow-hidden">
         <div 
           class="relative min-h-[500px] bg-cover bg-center"
@@ -104,21 +104,36 @@ const prevSlide = () => {
           <div class="absolute bottom-8 right-8 flex gap-3 z-20">
             <button
               @click="prevSlide"
-              class="w-12 h-12 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+              class="w-12 h-12 
+              border border-white bg-opacity-90
+              text-white
+              hover:bg-opacity-100
+              hover:text-black
+              hover:bg-white 
+              rounded-md flex 
+              items-center justify-center transition-all duration-300 hover:scale-110"
               aria-label="Previous slide"
             >
-            <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-              </svg>
+            <svg class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z">
+            </path>
+          </svg>
             </button>
             <button
               @click="nextSlide"
-              class="w-12 h-12 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+              class="w-12 h-12 border border-white bg-opacity-90 text-white 
+              hover:bg-opacity-100
+              hover:text-black
+              hover:bg-white 
+              rounded-md flex  items-center justify-center transition-all duration-300 hover:scale-110"
               aria-label="Next slide"
             >
-              <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
+            <svg class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M1.99974 13.0001L1.9996 11.0002L18.1715 11.0002L14.2218 7.05044L15.636 5.63623L22 12.0002L15.636 18.3642L14.2218 16.9499L18.1716 13.0002L1.99974 13.0001Z">
+            </path>
+            </svg>
             </button>
           </div>
         </div>
