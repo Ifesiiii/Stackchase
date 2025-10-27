@@ -1,5 +1,5 @@
 <script setup>
-import logo from '../assets/img/logo.png'
+import logo from '../assets/img/logo2.png'
 import { RouterLink, useRoute } from 'vue-router'
 
 // const isActiveLink = (routePath) => {
@@ -12,12 +12,26 @@ import { RouterLink, useRoute } from 'vue-router'
     <nav class="flex items-center justify-between px-8 py-6 mx-auto">
       <!-- Logo -->
       <RouterLink class="flex items-center gap-2" to="/">
-        <img :src="logo" class="w-[27.068px] h-[30.064px]"/>
-        <span class="text-white text-l font-semibold">Stackchase</span>
+        <img :src="logo" class="w-full h-full"/>
       </RouterLink>
 
       <!-- Navigation Links -->
       <div class="hidden md:flex items-center gap-10 text-[#E5E5E5] font-medium">
+        <RouterLink to="/company" class=" hover:text-white transition">
+            Company
+        </RouterLink>
+        <RouterLink to="/products" class=" hover:text-white transition">
+            Products
+        </RouterLink>
+        <RouterLink to="/News" class=" hover:text-white transition">
+            News
+        </RouterLink>
+        <RouterLink to="/Contact" class=" hover:text-white transition">
+            Contact
+        </RouterLink>
+
+
+<!--         
         <RouterLink to="/all" class="flex items-center gap-1 hover:text-white cursor-pointer transition">
           <span>All Stackchase</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
@@ -30,7 +44,7 @@ import { RouterLink, useRoute } from 'vue-router'
 
         <RouterLink to="/blog" class=" hover:text-white transition">
             Blog
-        </RouterLink>
+        </RouterLink> -->
       </div>
 
       <!-- Mobile Menu Button -->
