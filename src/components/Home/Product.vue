@@ -1,8 +1,8 @@
 <script setup>
 import Tile from './Tile.vue'
-import chat from '../../assets/img/chat.png'
+import chat from '../../assets/img/chat3.png'
 import mcube from '../../assets/img/mcube.png'
-import cube from '../../assets/img/cube.png'
+import musi from '../../assets/img/musi.png'
 
 
 const products = [
@@ -10,19 +10,19 @@ const products = [
     id: 1,
     image: chat,
     title: 'Ration',
-    description: 'Ration is a messaging and collaboration platform that offers intuitive'
+    description: 'A messaging, meeting and collaboration platform that offers intuitive, flexible and extensible set of features for all businesses.'
   },
   {
     id: 2,
     image: mcube,
     title: 'Singular API',
-    description: 'Ration is a messaging and collaboration platform that offers intuitive'
+    description: 'Our unified API management platform that connects multiple data sources into one secure, scalable interface.'
   },
   {
     id: 3,
-    image: cube,
-    title: 'Ration',
-    description: 'Ration is a messaging and collaboration platform that offers intuitive'
+    image: musi,
+    title: 'Musi.ng',
+    description: 'A dynamic UGC platform that blends the best of social expression — posts, visuals, and short videos — all in one place.'
   }
 ]
 </script>

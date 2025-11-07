@@ -22,8 +22,8 @@ const router = createRouter({
             component: HomeView,
         },
         {
-            path: '/company',
-            name: 'company',
+            path: '/company/about',
+            name: 'about',
             component: CompanyView,
         },
         {

@@ -21,9 +21,9 @@ console.log('Background path:', background)
     
     <div class="relative z-10 container pl-8 flex items-center min-h-screen">
       <div class="">
-        <p class="text-[#DDC9B4] text-xl  mb-8">Reimagining standards for building secure, scalable and interoperable software</p>
-        <h1 class="text-2xl md:text-6xl lg:text-6xl font-medium md:font-semibold lg:font-medium text-white mb-14 leading-tight">
-          Stackchase creates software platforms<br> that are engineered for scale,<br> built with care and driven by purpose
+        <p class="text-[#FFB343] text-xl  mb-8">Reimagining standards for building secure, scalable and interoperable software</p>
+        <h1 class="max-w-5xl text-2xl  md:text-6xl lg:text-6xl font-medium md:font-semibold lg:font-medium text-white mb-14 leading-tight">
+          Stackchase creates platforms engineered for scale, built with care and driven by purpose
         </h1>
         <button class="bg-white text-[#002233] px-10 py-3 rounded font-semibold hover:bg-[#006699]
         hover:text-white transition">

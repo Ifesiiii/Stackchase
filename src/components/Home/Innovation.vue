@@ -9,18 +9,18 @@ const currentSlide = ref(0)
 const features = [
   {
     id: 1,
-    title: 'Unified Metrics Hub',
-    description: 'We brought all your KPIs, goals, and progress into one intelligent dashboard'
+    title: 'Engineering what’s next',
+    description: 'Stackchase creates platforms that challenge convention and shape the future of connected work.'
   },
   {
     id: 2,
-    title: 'Seamless Collaboration Engine',
-    description: 'From task updates to team messages, Stackchase integrates collaboration directly into your'
+    title: 'Intelligent Innovation',
+    description: 'Stackchase creates platforms that challenge convention and shape the future of connected work.'
   },
   {
     id: 3,
-    title: 'Smart API Management',
-    description: 'With our Singular API solution, we simplify the complexity of managing multiple APIs'
+    title: 'Built for Control',
+    description: 'We design systems that give businesses full control that keep data and decisions close to home.'
   }
 ]
 
@@ -56,7 +56,7 @@ const prevSlide = () => {
     <div class="max-w-7xl mx-auto">
       <!-- Section Title -->
       <h2 class="text-4xl md:text-5xl font-semibold text-center text-[#131313] mb-12">
-        Best Innovation
+        Future Built
       </h2>
 
       <!-- Feature Cards Row -->
@@ -72,7 +72,7 @@ const prevSlide = () => {
       <!-- Slide image Section -->
       <div class="relative rounded-2xl overflow-hidden">
         <div 
-          class="relative min-h-[500px] bg-cover bg-center"
+          class="relative min-h-[500px] w-full h-full bg-cover bg-center"
           :style="{ backgroundImage: `url('${slides[currentSlide].image}')` }"
         >
           
@@ -80,18 +80,20 @@ const prevSlide = () => {
 
           <!-- Content -->
           <div class="relative z-10 p-12 md:p-16 flex flex-col justify-center min-h-[500px]">
-            <div class="max-w-2xl">
+            <div>
               <div class="mb-8">
                 <h3 class="text-2xl md:text-2xl font-sm text-[#E5E5E5] mb-4">
                   {{ slides[currentSlide].topTitle }}
                 </h3>
-                <p class="text-[#DDC9B4] leading-relaxed">
+                <p class="max-w-sm
+                text-[#DDC9B4] mb-2 leading-relaxed">
                   {{ slides[currentSlide].topDescription }}
                 </p>
+                <div class="max-w-sm border-b border-b-[#9F9F9F] border-dashed"></div>
               </div>
 
               <!-- Main Headline -->
-              <h3 class="text-2xl md:text-3xl font-medium text-white mb-10">
+              <h3 class="max-w-lg text-2xl md:text-3xl font-medium text-white mb-10">
                 {{ slides[currentSlide].mainTitle }}
               </h3>
 
@@ -101,7 +103,7 @@ const prevSlide = () => {
           </div>
 
           <!-- Navigation Buttons -->
-          <div class="absolute bottom-8 right-8 flex gap-3 z-20">
+          <div class="absolute bottom-20 right-16 flex gap-3 z-20">
             <button
               @click="prevSlide"
               class="w-12 h-12 

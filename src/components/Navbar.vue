@@ -1,11 +1,29 @@
 <script setup>
+import { ref } from 'vue'
 import logo from '../assets/img/logo2.png'
 import { RouterLink, useRoute } from 'vue-router'
+
 
 // const isActiveLink = (routePath) => {
 //     const route= useRoute()
 //     return route.path === routePath
 // }
+
+const showCompanyDropdown = ref(false)
+const showProductsDropdown = ref(false)
+
+const companyLinks = [
+  { name: 'About Us', path: '/company/about' },
+  { name: 'Leadership', path: '/company/leadership' },
+  { name: 'Careers', path: '/company/careers' },
+  { name: 'Press Kit', path: '/company/press-kit' }
+]
+
+const productLinks = [
+  { name: 'Ration', path: '/products/ration' },
+  { name: 'Singular API', path: '/products/singular-api' },
+  { name: 'Musi.ng', path: '/products/musing' }
+]
 </script>
 
 <template>
@@ -17,41 +35,87 @@ import { RouterLink, useRoute } from 'vue-router'
 
       <!-- Navigation Links -->
       <div class="hidden md:flex items-center gap-10 text-[#E5E5E5] font-medium">
-        <RouterLink to="/company" class=" hover:text-white transition">
+        <!-- Company Dropdown -->
+        <div 
+          class="relative"
+          @mouseenter="showCompanyDropdown = true"
+          @mouseleave="showCompanyDropdown = false"
+        >
+          <RouterLink 
+            class="hover:text-white transition cursor-pointer block"
+          >
             Company
-        </RouterLink>
-        <RouterLink to="/products" class=" hover:text-white transition">
+          </RouterLink>
+          
+          <!-- Company Dropdown Menu -->
+          <Transition
+            enter-active-class="transition ease-out duration-200"
+            enter-from-class="opacity-0 translate-y-1"
+            enter-to-class="opacity-100 translate-y-0"
+            leave-active-class="transition ease-in duration-150"
+            leave-from-class="opacity-100 translate-y-0"
+            leave-to-class="opacity-0 translate-y-1"
+          >
+            <div 
+              v-show="showCompanyDropdown"
+              class="absolute left-1/2 -translate-x-1/2 top-full w-48 bg-[#0C1723] rounded-lg shadow-xl py-2 z-50"
+            >
+              <RouterLink
+                v-for="link in companyLinks"
+                :key="link.path"
+                :to="link.path"
+                class="block px-6 py-3
+                text-white hover:text-[#E5E5E5]  hover:bg-[#243447] transition text-center"
+              >
+                {{ link.name }}
+              </RouterLink>
+            </div>
+          </Transition>
+        </div>
+
+        <!-- Products Dropdown -->
+        <div 
+          class="relative"
+          @mouseenter="showProductsDropdown = true"
+          @mouseleave="showProductsDropdown = false"
+        >
+          <RouterLink 
+            class="hover:text-white transition cursor-pointer"
+          >
             Products
-        </RouterLink>
-        <RouterLink to="/News" class=" hover:text-white transition">
+          </RouterLink>
+          
+          <!-- Products Dropdown Menu -->
+          <Transition
+            enter-active-class="transition ease-out duration-200"
+            enter-from-class="opacity-0 translate-y-1"
+            enter-to-class="opacity-100 translate-y-0"
+            leave-active-class="transition ease-in duration-150"
+            leave-from-class="opacity-100 translate-y-0"
+            leave-to-class="opacity-0 translate-y-1"
+          >
+            <div 
+              v-show="showProductsDropdown"
+              class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-[#0C1723] rounded-lg shadow-xl py-2 z-50"
+            >
+              <RouterLink
+                v-for="link in productLinks"
+                :key="link.path"
+                :to="link.path"
+                class="block px-6 py-3 text-white  hover:text-[#E5E5E5] hover:bg-[#243447] transition text-center"
+              >
+                {{ link.name }}
+              </RouterLink>
+            </div>
+          </Transition>
+        </div>
+
+        <RouterLink to="/News" class="hover:text-white transition">
             News
         </RouterLink>
-        <RouterLink to="/Contact" class=" hover:text-white transition">
+        <RouterLink to="/Contact" class="hover:text-white transition">
             Contact
         </RouterLink>
-
-
-<!--         
-        <RouterLink to="/all" class="flex items-center gap-1 hover:text-white cursor-pointer transition">
-          <span>All Stackchase</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
-          <path d="M12.625 0.781738L7 6.40674L1.375 0.781738" stroke="#E5E5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </RouterLink>
-        <RouterLink to="/about" class=" hover:text-white transition">
-            About
-        </RouterLink>
-
-        <RouterLink to="/blog" class=" hover:text-white transition">
-            Blog
-        </RouterLink> -->
       </div>
-
-      <!-- Mobile Menu Button -->
-      <!-- <button class="md:hidden text-white">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button> -->
     </nav>
 </template>

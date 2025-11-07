@@ -19,7 +19,7 @@ import Button from './Button.vue';
       <!-- Left Side - Top Left -->
       <div class="pl-10 pt-28">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight max-w-2xl">
-          We believe in clarity that drives actions
+          A cohesive team - building with purpose and precision.
         </h2>
       </div>
 
@@ -39,7 +39,7 @@ import Button from './Button.vue';
           <!-- Second Text Block -->
           <div>
             <h3 class="text-2xl md:text-3xl font-medium text-white mb-10">
-              We help you start fast, learn faster, and keep moving.
+              We learn fast, innovate faster and keep moving.
             </h3>
           </div>
 
