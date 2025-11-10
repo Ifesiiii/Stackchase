@@ -23,7 +23,7 @@ import { RouterLink } from 'vue-router';
         </div>
 
         
-        <div class="flex gap-18 md:gap-28">
+        <div class="flex gap-18 sm:gap-10 md:gap-28">
           <!-- Company Links -->
           <div>
             <h3 class="text-lg font-semibold mb-4">Company</h3>

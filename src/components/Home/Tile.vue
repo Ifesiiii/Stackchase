@@ -21,10 +21,10 @@ defineProps({
 
     <!-- Content -->
     <div class="p-6">
-      <h3 class="text-2xl font-medium text-[#020202] mb-3">
+      <h3 class="text-2xl font-medium text-[#020202] mb-3 leading-6">
         {{ title }}
       </h3>
-      <p class="text-[#484848] font-normal leading-relaxed">
+      <p class="text-[#484848] font-normal leading-8">
         {{ description }}
       </p>
     </div>

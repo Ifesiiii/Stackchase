@@ -27,7 +27,7 @@ const productLinks = [
 </script>
 
 <template>
-    <nav class="flex items-center justify-between px-8 py-6 mx-auto">
+    <nav class="flex items-center justify-between px-8 py-6 mx-auto relative z-20">
       <!-- Logo -->
       <RouterLink class="flex items-center gap-2" to="/">
         <img :src="logo" class="w-full h-full"/>
@@ -65,7 +65,7 @@ const productLinks = [
                 :key="link.path"
                 :to="link.path"
                 class="block px-6 py-3
-                text-white hover:text-[#E5E5E5]  hover:bg-[#243447] transition text-center"
+                text-white hover:text-[#E5E5E5]  hover:bg-[#243447] transition text-left"
               >
                 {{ link.name }}
               </RouterLink>
@@ -102,7 +102,7 @@ const productLinks = [
                 v-for="link in productLinks"
                 :key="link.path"
                 :to="link.path"
-                class="block px-6 py-3 text-white  hover:text-[#E5E5E5] hover:bg-[#243447] transition text-center"
+                class="block px-6 py-3 text-white  hover:text-[#E5E5E5] hover:bg-[#243447] transition text-left"
               >
                 {{ link.name }}
               </RouterLink>

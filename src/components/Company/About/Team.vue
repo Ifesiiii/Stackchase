@@ -36,11 +36,11 @@ const team = [
 </script>
 
 <template>
-    <section class="py-20 px-16">
+    <section class="max-w-7xl pb-20 px-16 mx-auto">
     <!-- heading  -->
     <div class="text-center mb-12">
         <h1 class="text-5xl md:text-6xl font-semibold text-[#00141F] mb-4">
-          Our Executive Team
+          Our Team
         </h1>
     </div>
 

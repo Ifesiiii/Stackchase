@@ -15,7 +15,7 @@ import cosmos from '../../../assets/img/cosmos.png'
         />
       </div>
     
-      
+  
       <!-- Content -->
       <div class="relative z-10">
         <Navtop />

@@ -1,21 +1,23 @@
 <script setup>
+import { useTalkAnimations } from '../../composables/useSmoothScroll'
 import workers from '../../assets/img/workers.png'
-import Button from './Button.vue';
+import Button from './Button.vue'
+
+useTalkAnimations()
 </script>
 
 <template>
-  <section class="relative min-h-screen px-8">
-    <div class="absolute inset-0 flex items-center justify-center">
-      <!-- Background Image -->
+  <section class="talk-section max-w-7xl relative rounded-2xl overflow-hidden mx-auto">
+    <div class="absolute inset-0">
       <div 
-        class="w-full h-full bg-cover bg-center bg-no-repeat"
+        class="talk-background relative min-h-[500px] w-[1440px] h-full bg-cover bg-center bg-no-repeat"
         :style="{ backgroundImage: `url(${workers})` }"
       ></div>
-      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="absolute inset-0 bg-black opacity-40"></div>
     </div>
 
     <!-- Content Container -->
-    <div class="relative z-10 h-full min-h-screen flex flex-col justify-between">
+    <div class="talk-content relative z-10 h-full min-h-screen flex flex-col justify-between">
       <!-- Left Side - Top Left -->
       <div class="pl-10 pt-28">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight max-w-2xl">
@@ -28,10 +30,10 @@ import Button from './Button.vue';
         <div class="space-y-8 max-w-md">
           <!-- First Text Block -->
           <div class="">
-            <h3 class="text-2xl md:text-2xl font-sm text-[#E5E5E5] mb-4">
+            <h3 class="text-2xl md:text-2xl font-sm text-[#E5E5E5] mb-4 leading-6">
               When teams understand
             </h3>
-            <p class="text-lg text-[#DDC9B4] leading-relaxed">
+            <p class="text-lg text-[#DDC9B4] leading-5">
               what matters, they move with purpose. Clarity turns goals into reality.
             </p>
           </div>
@@ -39,7 +41,7 @@ import Button from './Button.vue';
           <!-- Second Text Block -->
           <div>
             <h3 class="text-2xl md:text-3xl font-medium text-white mb-10">
-              We learn fast, innovate faster and keep moving.
+              We help you start fast, learn faster, and keep moving.
             </h3>
           </div>
 
@@ -50,3 +52,4 @@ import Button from './Button.vue';
     </div>
   </section>
 </template>
+

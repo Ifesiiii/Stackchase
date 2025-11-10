@@ -1,10 +1,15 @@
 <script setup>
+import { useTimelineAnimations } from '../../composables/useSmoothScroll'
+
+
+useTimelineAnimations()
+
 const timelineEvents = [
   {
     year: '2003',
     title: 'Lopworks Founded',
     description:
-      'Lopworks was established as an IT company delivering consulting and system‑integration services to enterprises across diverse industries.',
+      'Lopworks was established as an IT company delivering consulting and system integration services to enterprises across diverse industries.',
     position: 'bottom' 
   },
   {
@@ -18,7 +23,7 @@ const timelineEvents = [
     year: '2023',
     title: 'Started Ration Build',
     description:
-      'Started developing Ration as an on‑premises email platform, first adopted by the Nigerian Army and then the Ogun State Government.',
+      'Started developing Ration as an on-premises email platform, first adopted by the Nigerian Army and then the Ogun State Government.',
     position: 'bottom' 
   },
   {
@@ -35,7 +40,7 @@ const timelineEvents = [
   <section class="bg-gray-50 py-16 px-6">
     <div class="mx-auto max-w-7xl">
       <!-- Section Title -->
-      <h2 class="mb-16 px-4 text-center text-4xl font-semibold text-[#00141F] md:mb-20 md:text-5xl">
+      <h2 class="px-4 text-center text-4xl font-semibold text-[#00141F] sm:mb-10 md:mb-20 md:text-5xl leading-10">
         A Journey—Transforming and<br class="hidden md:block"> Innovating Through Time
       </h2>
 
@@ -44,35 +49,39 @@ const timelineEvents = [
         <!-- Horizontal axis (desktop) -->
         <div
           aria-hidden="true"
-          class="absolute inset-x-0 top-1/2 hidden -translate-y-1/2 rounded-full md:block"
+          class="timeline-axis absolute inset-x-0 top-1/2 hidden -translate-y-1/2 rounded-full md:block"
+          style="transform-origin: left center"
         >
           <div class="h-[10px] rounded-full bg-gradient-to-r from-gray-300 via-sky-400 to-sky-900 shadow-[0_6px_22px_rgba(2,132,199,0.25)]"></div>
         </div>
 
-        <!-- Items -->
+        <!-- Vertical line (mobile) -->
+        <div
+          aria-hidden="true"
+          class="absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 -translate-x-1/2 md:hidden"
+        ></div>
+
+        <!-- Items - Add timeline-event class -->
         <div class="grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-6">
           <article
             v-for="(event, idx) in timelineEvents"
             :key="`${event.year}-${idx}`"
-            class="relative"
+            class="timeline-event relative"
           >
             <div class="relative block md:hidden">
-              <!-- Connector & dot (inside card, centered) -->
+              <!-- Dot on vertical line -->
               <div
                 class="absolute left-1/2 z-10 -translate-x-1/2"
-                :class="event.position === 'top' ? 'top-0 -mt-6' : 'top-0'"
                 aria-hidden="true"
               >
-                <div v-if="event.position === 'top'" class="mb-2 h-6 w-px bg-gray-300"></div>
-                <div class="h-3 w-3 rounded-full bg-gray-400"></div>
-                <div v-if="event.position === 'bottom'" class="mt-2 h-6 w-px bg-gray-300"></div>
+                <div class="h-4 w-4 rounded-full bg-gray-400 border-4 border-white shadow-md"></div>
               </div>
 
               <!-- Card content -->
-              <div class="mx-auto max-w-md rounded-lg bg-white p-5 shadow-sm ring-1 ring-gray-100">
-                <h3 class="mb-1 text-center text-4xl font-bold leading-none">{{ event.year }}</h3>
-                <h4 class="mb-2 text-center text-lg font-semibold">{{ event.title }}</h4>
-                <p class="text-center text-sm leading-relaxed text-gray-600">
+              <div class="mx-auto max-w-md rounded-lg bg-white p-6 shadow-md ring-1 ring-gray-200">
+                <h3 class="mb-2 text-center text-4xl font-bold leading-none text-[#00141F]">{{ event.year }}</h3>
+                <h4 class="mb-3 text-center text-xl font-semibold text-[#00141F]">{{ event.title }}</h4>
+                <p class="text-center text-sm leading-6 text-gray-600">
                   {{ event.description }}
                 </p>
               </div>
@@ -86,7 +95,7 @@ const timelineEvents = [
                 aria-hidden="true"
               >
                 <div class="flex flex-col items-center">
-                  <div v-if="event.position === 'top'" class="h-60 w-px bg-gray-300"></div>
+                  <div v-if="event.position === 'top'" class="h-60 w-px bg-gray-200"></div>
                   <div class="h-3 w-3 rounded-full bg-gray-400"></div>
                   <div v-if="event.position === 'bottom'" class="h-60 w-px bg-gray-300"></div>
                 </div>
@@ -132,6 +141,3 @@ const timelineEvents = [
     </div>
   </section>
 </template>
-
-
-
