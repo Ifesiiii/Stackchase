@@ -14,7 +14,7 @@ const showProductsDropdown = ref(false)
 
 const companyLinks = [
   { name: 'About Us', path: '/company/about' },
-  { name: 'Leadership', path: '/company/leadership' },
+  { name: 'Our People', path: '/company/our-people' },
   { name: 'Careers', path: '/company/careers' },
   { name: 'Press Kit', path: '/company/press-kit' }
 ]
@@ -27,14 +27,14 @@ const productLinks = [
 </script>
 
 <template>
-    <nav class="flex items-center justify-between px-8 py-6 mx-auto relative z-20">
+    <nav class="flex items-center justify-between py-0 mx-auto relative z-20">
       <!-- Logo -->
-      <RouterLink class="flex items-center gap-2" to="/">
+      <RouterLink class="flex items-center" to="/">
         <img :src="logo" class="w-full h-full"/>
       </RouterLink>
 
       <!-- Navigation Links -->
-      <div class="hidden md:flex items-center gap-10 text-[#E5E5E5] font-medium">
+      <div class="hidden md:flex items-center gap-[71px] text-[#E5E5E5] font-medium">
         <!-- Company Dropdown -->
         <div 
           class="relative"
@@ -110,10 +110,10 @@ const productLinks = [
           </Transition>
         </div>
 
-        <RouterLink to="/News" class="hover:text-white transition">
+        <RouterLink to="/news" class="hover:text-white transition">
             News
         </RouterLink>
-        <RouterLink to="/Contact" class="hover:text-white transition">
+        <RouterLink to="/contact" class="hover:text-white transition">
             Contact
         </RouterLink>
       </div>

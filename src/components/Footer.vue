@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 
 
 <template>
-  <footer class="bg-[#1a2332] text-[#E5E5E5] py-12 px-6">
+  <footer class="font-heading bg-[#1a2332] text-[#E5E5E5] py-[72px] px-6">
     <div class="max-w-7xl mx-auto">
       <!-- Main Footer Content -->
       <div class="flex flex-col md:flex-row justify-between gap-8 mb-8">
@@ -17,7 +17,7 @@ import { RouterLink } from 'vue-router';
             class="w-1/5" 
             />
           </div>
-          <p class="leading-relaxed">
+          <p class="text-xl leading-[30px]">
             Stackchase Limited is a technology company<br> building secure, high-performance platforms<br> that power modern collaboration,<br>communication and digital operations.
           </p>
         </div>
@@ -26,33 +26,33 @@ import { RouterLink } from 'vue-router';
         <div class="flex gap-18 sm:gap-10 md:gap-28">
           <!-- Company Links -->
           <div>
-            <h3 class="text-lg font-semibold mb-4">Company</h3>
+            <h3 class="text-xl font-semibold mb-4 leading-6">Company</h3>
             <ul class="space-y-2">
               <li>
-                <RouterLink to="/company/about" class=" hover:text-white transition-colors">About</RouterLink>
+                <RouterLink to="/company/about" class="text-xl leading-7 hover:text-white transition-colors">About</RouterLink>
               </li>
               <li>
-                <RouterLink to="/products" class=" hover:text-white transition-colors">Product</RouterLink>
+                <RouterLink to="/products" class="text-xl leading-7  hover:text-white transition-colors">Product</RouterLink>
               </li>
               <li>
-                <RouterLink to="/News" class=" hover:text-white transition-colors">News
+                <RouterLink to="/News" class="text-xl leading-7  hover:text-white transition-colors">News
                 </RouterLink>
               </li>
               <li>
-                <RouterLink to="/career" class=" hover:text-white transition-colors">Career</RouterLink>
+                <RouterLink to="/career" class="text-xl leading-7  hover:text-white transition-colors">Career</RouterLink>
               </li>
             </ul>
           </div>
 
           <!-- Support Links -->
           <div>
-            <h3 class="text-lg font-semibold mb-4">Support</h3>
+            <h3 class="text-xl font-semibold mb-4 leading-6">Support</h3>
             <ul class="space-y-2">
               <li>
-                <RouterLink to="/product-support" class=" hover:text-white transition-colors">Product support</RouterLink>
+                <RouterLink to="/product-support" class="text-xl leading-7  hover:text-white transition-colors">Product support</RouterLink>
               </li>
               <li>
-                <RouterLink to="/Contact" class=" hover:text-white transition">Contact Us
+                <RouterLink to="/Contact" class="text-xl leading-7  hover:text-white transition">Contact Us
                 </RouterLink>
               </li>
             </ul>
@@ -63,15 +63,15 @@ import { RouterLink } from 'vue-router';
       <!-- Bottom Bar -->
       <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <div class="flex items-center gap-4 text-sm">
-          <span class="flex items-center gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <span class="flex text-xl leading-7 items-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#E5E5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M15 14.25C14.5278 14.8796 13.8694 15.3448 13.1181 15.5794C12.3669 15.8141 11.5608 15.8065 10.8141 15.5576C10.0675 15.3087 9.41804 14.8312 8.95784 14.1927C8.49764 13.5542 8.25 12.7871 8.25 12C8.25 11.2129 8.49764 10.4458 8.95784 9.80734C9.41804 9.16884 10.0675 8.69133 10.8141 8.44244C11.5608 8.19355 12.3669 8.1859 13.1181 8.42057C13.8694 8.65525 14.5278 9.12035 15 9.75" stroke="#E5E5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             Copyright 2025 Stackchase Limited. All right reserved.
           </span>
-          <span class="hidden md:inline">|</span>
-          <a href="#" class="hover:text-white transition-colors">Legal notice</a>
+          <span class="text-[#E7E7E7] hidden md:inline">|</span>
+          <a href="#" class=" text-xl hover:text-white transition-colors leading-7">Legal notice</a>
         </div>
 
         <!-- Social Icons -->

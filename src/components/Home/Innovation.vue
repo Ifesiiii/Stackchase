@@ -55,15 +55,15 @@ const prevSlide = () => {
 </script>
 
 <template>
-  <section class="px-8">
+  <section class="font-heading px-8 mb-[100px]">
     <div class="max-w-7xl mx-auto">
       <!-- Section Title -->
-      <h2 class="text-4xl md:text-5xl font-semibold text-center text-[#131313] mb-12 leading-[56px]">
+      <h2 class="text-4xl md:text-5xl font-semibold text-center text-[#131313] mb-[62px] leading-[56px]">
         Future Built
       </h2>
 
       <!-- Feature Cards Row - Add feature-cards-container wrapper -->
-      <div class="feature-cards-container grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="feature-cards-container grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <div class="feature-card bg-white p-6 border-l border-[#BEBEBE] border-dashed hover:shadow-md transition-shadow duration-300">
           <h3 class="text-xl font-semibold text-[#131313] mb-3 leading-7">
             Engineering what's next
@@ -95,7 +95,7 @@ const prevSlide = () => {
       <!-- Slide image Section - Add innovation-slide class -->
       <div class="innovation-slide mb-16 relative rounded-2xl overflow-hidden">
         <div 
-          class="relative min-h-[500px] w-full h-full bg-cover bg-center"
+          class="relative w-full h-[623px] bg-cover bg-center"
           :style="{ backgroundImage: `url('${slides[currentSlide].image}')` }"
         >
           

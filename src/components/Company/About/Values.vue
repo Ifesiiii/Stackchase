@@ -42,10 +42,10 @@ const values = [
 
 
 <template>
-  <section class="bg-gray-50 py-20 px-8">
+  <section class="font-heading bg-[#F8FBFC] px-8 py-[50px] mb-[50px]">
     <div class="max-w-7xl mx-auto">
       <!-- Section Title -->
-      <h2 class="text-4xl md:text-5xl font-semibold text-center text-[#131313] mb-16">
+      <h2 class="text-4xl md:text-5xl font-semibold text-center text-[#131313] mb-12">
         Stackchase Core Values
       </h2>
 
@@ -57,17 +57,17 @@ const values = [
           class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300"
         >
           <!-- Number -->
-          <div class="text-3xl font-semibold text-[#000000] mb-6">
+          <div class="text-[28px] font-semibold text-[#000000] mb-6 leading-7">
             {{ value.number }}
           </div>
 
           <!-- Title -->
-          <h3 class="text-2xl font-semibold text-[#131313] mb-4">
+          <h3 class="text-[28px] font-semibold text-[#131313] mb-4 leading-8">
             {{ value.title }}
           </h3>
 
           <!-- Description -->
-          <p class="text-[#131313] leading-relaxed">
+          <p class="text-xl text-[#131313] leading-7">
             {{ value.description }}
           </p>
         </div>

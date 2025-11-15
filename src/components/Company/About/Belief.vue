@@ -3,19 +3,19 @@
 
 
 <template>
-    <section class="bg-white py-20 px-8">
+    <section class="font-heading bg-white px-8 mb-[50px]">
       <div class="max-w-7xl mx-auto">
         <!-- Content Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Left Column -->
           <div>
-            <h2 class="text-3xl md:text-4xl font-semibold text-[#00141F] leading-tight">
+            <h2 class="text-5xl font-semibold text-[#00141F] leading-[56px] tracking-[-0.48px]">
               We believe<br> that Africa can build its<br> own technology stack 
             </h2>
           </div>
 
           <!-- Right Column -->
-          <div class="font-sm space-y-6 text-[#00141F] leading-relaxed">
+          <div class="text-2xl space-y-6 text-[#00141F] leading-[30px]">
             <p>
               Our Story.
             </p>

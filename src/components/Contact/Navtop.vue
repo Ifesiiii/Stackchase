@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue'
-import Navbar from '../../Navbar.vue';
+import Navbar from '../Navbar.vue';
 
 const breadcrumbs = ref([
   { label: 'Company' },
-  { label: 'About', href: '/company/about' }
+  { label: 'Contact Us', path: '/contact' }
 ])
 </script>
 

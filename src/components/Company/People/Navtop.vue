@@ -4,7 +4,7 @@ import Navbar from '../../Navbar.vue';
 
 const breadcrumbs = ref([
   { label: 'Company' },
-  { label: 'About', href: '/company/about' }
+  { label: 'Our People', path: '/company/our-people' }
 ])
 </script>
 

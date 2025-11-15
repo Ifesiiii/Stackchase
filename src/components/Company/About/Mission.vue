@@ -24,9 +24,9 @@ const goals = ref([
 
 
 <template>
-  <section class="bg-white py-20 px-8">
+  <section class="font-heading bg-white px-8 mb-[100px]">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-4xl md:text-5xl font-semibold text-center text-[#131313] mb-16">
+      <h2 class="text-[56px] font-semibold text-center text-[#131313] mb-12 leading-[56px] tracking-[-0.5px]">
         Our Mission and Vision
       </h2>
 

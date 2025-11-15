@@ -37,7 +37,7 @@ const timelineEvents = [
 </script>
 
 <template>
-  <section class="bg-gray-50 py-16 px-6">
+  <section class="font-heading bg-gray-50 pr-16 pl-16 py-[100px]">
     <div class="mx-auto max-w-7xl">
       <!-- Section Title -->
       <h2 class="px-4 text-center text-4xl font-semibold text-[#00141F] sm:mb-10 md:mb-20 md:text-5xl leading-10">
