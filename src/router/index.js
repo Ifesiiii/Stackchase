@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import CompanyView from '../views/CompanyView.vue'
-import BlogView from '../views/BlogView.vue'
-import FeaturedView from '../views/FeaturedView.vue'
+import AboutView from '../views/AboutView.vue'
+import CareerView from '../views/CareerView.vue'
+import PeopleView from '../views/PeopleView.vue'
+import ContactView from '../views/ContactView.vue'
 
 
 const router = createRouter({
@@ -24,21 +25,22 @@ const router = createRouter({
         {
             path: '/company/about',
             name: 'about',
-            component: CompanyView,
+            component: AboutView,
         },
         {
-            path: '/blog',
-            name: 'blog',
-            component: BlogView,
+            path: '/company/careers',
+            name: 'career',
+            component: CareerView,
         },
         {
-            path: '/blog/featured',
-            name: 'featured',
-            component: FeaturedView,
-            // component: () =>
-            //     import ('../views/FeaturedView.vue')
+            path: '/company/our-people',
+            name: 'people',
+            component: PeopleView,
         },
-
+        {   path: '/contact',
+            name: 'contact',
+            component: ContactView,
+    },
     ],
 })
 
