@@ -1,6 +1,6 @@
 <script setup>
 import Navtop from './Navtop.vue'
-import walls from '../../assets/img/walls.png'
+import walls from '../../../assets/img/walls.png'
 </script>
 
 <template>
@@ -22,9 +22,9 @@ import walls from '../../assets/img/walls.png'
         <!-- Hero Content -->
         <div class="pb-32 pt-16 md:pt-24 lg:pt-16">
           <div class="max-w-7xl">
-            <p class="text-[#FFB343] text-2xl mb-4 leading-7 tracking-[0.2px]">Contact Us</p>
+            <p class="text-[#FFB343] text-2xl mb-4 leading-7 tracking-[0.2px]">Press Kit</p>
             <h1 class="text-6xl font-semibold text-white leading-[72px] tracking-[-2.56px]">
-              Let’s Build What’s Next,<br> Together
+              Telling the Stackchase<br> Story Right
             </h1>
           </div>
         </div>

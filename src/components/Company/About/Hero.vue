@@ -4,7 +4,7 @@ import cosmos from '../../../assets/img/cosmos.png'
 </script>
 
 <template>
-    <section class="font-heading relative min-h-screen overflow-hidden mx-auto mb-[100px]">
+    <section class="font-heading relative min-h-screen overflow-hidden mx-auto mb-[100px] max-w-screen-[1366px]">
       <!-- Background Image Overlay -->
       <div class="absolute inset-0">
         <img 

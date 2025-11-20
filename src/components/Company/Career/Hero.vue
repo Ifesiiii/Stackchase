@@ -5,7 +5,7 @@ import steps from '../../../assets/img/steps.png'
 </script>
 
 <template>
-    <section class="font-heading relative overflow-hidden mx-auto mb-[100px]">
+    <section class="font-heading relative overflow-hidden mx-auto mb-[100px] max-w-screen-[1366px]">
       <!-- Background Image Overlay -->
       <div class="absolute inset-0">
         <img 

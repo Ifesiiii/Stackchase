@@ -36,7 +36,7 @@ const articles = ref([
 
 <template>
   <section class="bg-gray-50 py-20 px-8">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl max-w-screen-[1366px] mx-auto">
       <!-- Section Header -->
       <div class="flex items-center justify-between mb-12">
         <h2 class="text-4xl md:text-5xl font-semibold text-[#131313]">

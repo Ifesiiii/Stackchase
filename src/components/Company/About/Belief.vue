@@ -4,7 +4,7 @@
 
 <template>
     <section class="font-heading bg-white px-8 mb-[50px]">
-      <div class="max-w-7xl mx-auto">
+      <div class="max-w-7xl max-w-screen-[1366px] mx-auto">
         <!-- Content Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Left Column -->

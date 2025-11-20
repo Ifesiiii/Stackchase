@@ -32,7 +32,7 @@ const products = [
 
 <template>
   <section class="font-heading px-8 pb-[100px]">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl max-w-screen-[1366px] mx-auto">
       <!-- Section Title -->
       <h2 class="text-4xl md:text-5xl font-semibold text-center text-[#131313] mb-[62px] leading-[56px] tracking-[-0.5px]">
         Our Products

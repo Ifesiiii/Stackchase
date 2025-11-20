@@ -25,7 +25,7 @@ const goals = ref([
 
 <template>
   <section class="font-heading bg-white px-8 mb-[100px]">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl max-w-screen-[1366px] mx-auto">
       <h2 class="text-[56px] font-semibold text-center text-[#131313] mb-12 leading-[56px] tracking-[-0.5px]">
         Our Mission and Vision
       </h2>

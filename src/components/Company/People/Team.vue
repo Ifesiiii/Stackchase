@@ -36,7 +36,7 @@ const team = [
 </script>
 
 <template>
-    <section class="font-heading max-w-7xl mb-[100px] mx-auto">
+    <section class="font-heading max-w-7xl max-w-screen-[1366px] mb-[100px] mx-auto">
     <!-- heading  -->
     <div class="text-center mb-12">
         <h1 class="text-5xl font-semibold text-[#00141F] mb-12 leading-[56px] tracking-[-0.5px]">

@@ -5,8 +5,8 @@ import { RouterLink } from 'vue-router';
 
 
 <template>
-  <footer class="font-heading bg-[#1a2332] text-[#E5E5E5] py-[72px] px-6">
-    <div class="max-w-7xl mx-auto">
+  <footer class="font-heading bg-[#13212F] text-[#E5E5E5] py-[72px] px-6">
+    <div class="max-w-7xl max-w-screen-[1366px] mx-auto">
       <!-- Main Footer Content -->
       <div class="flex flex-col md:flex-row justify-between gap-8 mb-8">
         <!-- Company Info -->

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div class="font-heading bg-[#F8FBFC] max-w-7xl sm:px-8 lg:px-0 mx-auto mb-[100px]">
+    <div class="font-heading bg-[#F8FBFC] max-w-7xl max-w-screen-[1366px]fig mx-auto mb-[100px]">
       <!-- Main Heading -->
       <h1 class="text-[40px] font-semibold mb-16 leading-[56px] tracking-[-0.5px]">
         Stackchase is driven by the conviction that technology should empower people, not limit them.

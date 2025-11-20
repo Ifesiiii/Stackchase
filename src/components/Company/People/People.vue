@@ -5,7 +5,7 @@ import people from '../../../assets/img/people.png'
 
 <template>
     <section class="font-heading px-8 mb-[100px]">
-      <div class="max-w-7xl mx-auto">
+      <div class="max-w-7xl max-w-screen-[1366px] mx-auto">
         <!-- Content Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <!-- Left Column -->

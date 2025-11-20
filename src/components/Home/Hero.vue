@@ -4,7 +4,7 @@ import background from '../../assets/img/Background.png'
 </script>
 
 <template>
-  <div class="font-heading relative min-h-screen overflow-hidden h-[816px]">
+  <div class="font-heading relative min-h-screen overflow-hidden h-[816px] max-w-screen-[1366px]">
     
     <div class="bg-no-repeat absolute inset-0"
       :style="{
