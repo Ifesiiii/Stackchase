@@ -4,6 +4,7 @@ import AboutView from '../views/AboutView.vue'
 import CareerView from '../views/CareerView.vue'
 import PeopleView from '../views/PeopleView.vue'
 import ContactView from '../views/ContactView.vue'
+import KitView from '../views/KitView.vue'
 
 
 const router = createRouter({
@@ -37,10 +38,14 @@ const router = createRouter({
             name: 'people',
             component: PeopleView,
         },
+        {   path: '/company/press-kit',
+            name: 'press-kit',
+            component: KitView,
+        },
         {   path: '/contact',
             name: 'contact',
             component: ContactView,
-    },
+        },
     ],
 })
 
