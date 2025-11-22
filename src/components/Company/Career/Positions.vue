@@ -39,7 +39,7 @@ const positions = [
 </script>
 
 <template>
-    <div class="font-heading max-w-7xl max-w-screen-[1366px] mx-auto mb-[100px]">
+    <div class="font-heading max-w-7xl max-w-screen-[1366px] mx-auto mb-[100px] sm:px-8">
       <h1 class="text-5xl font-bold mb-[68px] leading-[56px] tracking-[-0.5px]">
         Open Positions. <span>({{ positions.length }})</span>
       </h1>

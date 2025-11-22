@@ -16,7 +16,7 @@ import cosmos from '../../../assets/img/cosmos.png'
     
   
       <!-- Content -->
-      <div class="relative z-10 mx-[80px] mt-[48px] mb-[165px]">
+      <div class="relative z-10 mx-8 xl:mx-[80px] mt-[48px]">
         <Navtop />
         
         <!-- Hero Content -->
