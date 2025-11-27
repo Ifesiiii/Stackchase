@@ -5,6 +5,8 @@ import CareerView from '../views/CareerView.vue'
 import PeopleView from '../views/PeopleView.vue'
 import ContactView from '../views/ContactView.vue'
 import KitView from '../views/KitView.vue'
+import GovView from '../views/GovView.vue'
+import BusiView from '../views/BusiView.vue'
 
 
 const router = createRouter({
@@ -45,6 +47,14 @@ const router = createRouter({
         {   path: '/contact',
             name: 'contact',
             component: ContactView,
+        },
+        {   path: '/government',
+            name: 'government',
+            component: GovView,
+        },
+        {   path: '/business',
+            name: 'business',
+            component: BusiView,
         },
     ],
 })
