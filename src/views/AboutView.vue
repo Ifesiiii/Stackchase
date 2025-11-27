@@ -10,5 +10,6 @@ import Footer from '../components/Footer.vue';
     <Hero />
     <Belief />
     <Values />
+    <Mission />
     <Footer />
 </template>
