@@ -1,8 +1,8 @@
 <script setup>
 import { useProductAnimations } from '../../composables/useSmoothScroll'
 import Tile from './Tile.vue'
-import chat from '../../assets/img/chat3.png'
-import mcube from '../../assets/img/mcube.png'
+import chat from '../../assets/img/chat4.png'
+import hawk from '../../assets/img/Redhawk.png'
 import musi from '../../assets/img/musi.png'
 
 
@@ -17,9 +17,9 @@ const products = [
   },
   {
     id: 2,
-    image: mcube,
-    title: 'Singular API',
-    description: 'Our unified API management platform that connects multiple data sources into one secure, scalable interface.'
+    image: hawk,
+    title: 'Red Hawk',
+    description: 'A high-performance integration and API platform running on a single powerful engine.'
   },
   {
     id: 3,

@@ -129,9 +129,6 @@ const closeMobileMenu = () => {
           </Transition>
         </div>
 
-        <RouterLink to="/news" class="hover:text-white transition">
-            News
-        </RouterLink>
         <RouterLink to="/contact" class="hover:text-white transition">
             Contact
         </RouterLink>
@@ -260,14 +257,6 @@ const closeMobileMenu = () => {
             </Transition>
           </div>
 
-          <!-- News Link -->
-          <RouterLink
-            to="/news"
-            @click="closeMobileMenu"
-            class="block text-[#E5E5E5] font-medium py-4 hover:text-white transition"
-          >
-            News
-          </RouterLink>
 
           <!-- Contact Link -->
           <RouterLink
