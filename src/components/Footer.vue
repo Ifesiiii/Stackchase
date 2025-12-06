@@ -30,7 +30,7 @@ import { RouterLink } from 'vue-router';
             <h3 class="text-xl leading-6 font-semibold mb-6">Company</h3>
             <ul class="space-y-3">
               <li>
-                <RouterLink to="/company/about" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">About</RouterLink>
+                <RouterLink to="/company/about" class="text-xl text[#E5E5E5] hover:text-white transition-colors">About</RouterLink>
               </li>
               <li>
                 <RouterLink to="/products" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">Product</RouterLink>
@@ -39,7 +39,7 @@ import { RouterLink } from 'vue-router';
                 <RouterLink to="/News" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">News</RouterLink>
               </li>
               <li>
-                <RouterLink to="/career" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">Career</RouterLink>
+                <RouterLink to="/company/careers" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">Career</RouterLink>
               </li>
             </ul>
           </div>

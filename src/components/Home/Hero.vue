@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from '../Navbar.vue'
 import background from '../../assets/img/Background.png'
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -25,10 +26,12 @@ import background from '../../assets/img/Background.png'
         <h1 class="max-w-4xl text-[50px] md:text-[40px] lg:text-[60px] font-medium md:font-semibold lg:font-semibold text-white mb-[72px] lg:leading-[72px] tracking-[-2.56px]">
           Stackchase creates platforms engineered for scale, built with care and driven by purpose
         </h1>
-        <button class="bg-white text-[#002233] px-10 py-3 rounded font-semibold hover:bg-[#006699]
+        <RouterLink to="/company/about">
+          <button class="bg-white text-[#002233] px-10 py-3 rounded font-semibold hover:bg-[#006699]
         hover:text-white transition">
           Our Story
-        </button>
+          </button>
+        </RouterLink>
       </div>
     </div>
     </div>

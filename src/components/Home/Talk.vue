@@ -1,5 +1,6 @@
 <script setup>
 import { useTalkAnimations } from '../../composables/useSmoothScroll'
+import { RouterLink } from 'vue-router'
 import workers from '../../assets/img/workers.png'
 import Button from './Button.vue'
 
@@ -46,7 +47,9 @@ useTalkAnimations()
           </div>
 
           <!-- Button -->
-          <Button></Button>
+          <RouterLink  to="/company/our-people">
+            <Button class="mt-12" text="Our People" @click="handleOurPeopleClick"/>
+          </RouterLink>
         </div>
       </div>
     </div>

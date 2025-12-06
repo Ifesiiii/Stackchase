@@ -76,7 +76,7 @@ const toggleAccordion = (item) => {
                     v-show="openItem === 'security'" 
                     class="text-lg text-[#424242] leading-7 mt-2"
                   >
-                    Hai Gaiz.
+                    Enterprise-grade encryption, multi-factor authentication, and customizable access policies.
                   </p>
                 </div>
                 <svg 
@@ -106,7 +106,7 @@ const toggleAccordion = (item) => {
                     v-show="openItem === 'scalability'" 
                     class="text-lg text-[#424242] leading-7 mt-2"
                   >
-                    Hai Gaiz.
+                    Built on robust architecture that grows with national and agency-level workloads.
                   </p>
                 </div>
                 <svg 
@@ -136,7 +136,7 @@ const toggleAccordion = (item) => {
                     v-show="openItem === 'efficiency'" 
                     class="text-lg text-[#424242] leading-7 mt-2"
                   >
-                    Hai Gaiz.
+                    Reduces administrative bottlenecks through integrated communication and collaboration tools.
                   </p>
                 </div>
                 <svg 

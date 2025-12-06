@@ -1,8 +1,12 @@
 <script setup>
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
 import { useInnovationAnimations } from '../../composables/useSmoothScroll'
 import SmallCard from './Scard.vue'
 import bg from '../../assets/img/officework.png'
+import bg2 from '../../assets/img/Dworking.png'
+import bg3 from '../../assets/img/Goodtime.png'
+import bg4 from '../../assets/img/ethnic.png'
 import Button from './Button.vue'
 
 useInnovationAnimations()
@@ -33,15 +37,29 @@ const slides = [
     id: 1,
     image: bg,
     topTitle: 'When teams understand',
-    topDescription: 'what matters, they move with purpose. Clarity turns goals into reality.',
+    topDescription: 'What matters, they move with purpose. Clarity turns goals into reality.',
     mainTitle: 'We help you start fast, learn faster, and keep moving.'
   },
   {
     id: 2,
-    image: '/path-to-team-image-2.jpg',
+    image: bg2,
+    topTitle: 'No more guesswork',
+    topDescription: 'We turned messy goals and scattered KPIs into a single, smart performance dashboard.',
+    mainTitle: 'We connects your team’s goals, metrics, and progress in one clean view.'
+  },
+  {
+    id: 3,
+    image: bg3,
     topTitle: 'When teams understand',
-    topDescription: 'what matters, they move with purpose. Clarity turns goals into reality.',
+    topDescription: 'What matters, they move with purpose. Clarity turns goals into reality.',
     mainTitle: 'We help you start fast, learn faster, and keep moving.'
+  },
+  {
+    id: 4,
+    image: bg4,
+    topTitle: 'No more guesswork',
+    topDescription: 'We turned messy goals and scattered KPIs into a single, smart performance dashboard.',
+    mainTitle: 'We connects your team’s goals, metrics, and progress in one clean view.'
   }
 ]
 
@@ -120,7 +138,9 @@ const prevSlide = () => {
               </h3>
 
               <!-- Button -->
-              <Button></Button>
+              <RouterLink to="/Contact">
+              <Button text="Let's talk" @click="handleLetsTalkClick" />
+              </RouterLink>
             </div>
           </div>
 

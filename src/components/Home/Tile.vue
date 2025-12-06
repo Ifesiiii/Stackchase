@@ -9,7 +9,7 @@ defineProps({
 
 
 <template>
-  <div class="bg-[#EFEFEF] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+  <div class="rounded-md overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
     <!-- Image Container -->
     <div class="flex items-center justify-center hover:scale-105 transition-transform duration-500">
       <img
@@ -20,7 +20,7 @@ defineProps({
     </div>
 
     <!-- Content -->
-    <div class="p-6">
+    <div class="pt-6 pb-6">
       <h3 class="text-[32px] font-medium text-[#020202] mb-3 leading-8">
         {{ title }}
       </h3>

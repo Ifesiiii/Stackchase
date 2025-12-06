@@ -42,7 +42,7 @@ const values = [
 
 
 <template>
-  <section class="font-heading bg-[#F8FBFC] px-8 py-[50px] mb-[50px]">
+  <section class="font-heading bg-[#F8FBFC] px-8 py-[100px] mb-[100px]">
     <div class="max-w-7xl max-w-screen-[1366px] mx-auto">
       <!-- Section Title -->
       <h2 class="text-4xl md:text-5xl font-semibold text-center text-[#131313] mb-12">
@@ -57,7 +57,7 @@ const values = [
           class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300"
         >
           <!-- Number -->
-          <div class="text-[28px] font-semibold text-[#000000] mb-6 leading-7">
+          <div class="bg-[#F5F9FB] text-[28px] font-semibold text-[#000000] mb-6 leading-7 w-12 h-12 flex items-center justify-center rounded-full">
             {{ value.number }}
           </div>
 
