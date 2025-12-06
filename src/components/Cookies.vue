@@ -52,7 +52,7 @@ const rejectCookies = () => {
       <div class="mb-4 pr-6">
         <p class="text-[#00141F] text-xl leading-7">
           We use cookies to enhance your experience, analyze site traffic and deliver personalized content. Read our 
-          <RouterLink to="/privacy-policy" class="text-[#069] hover:text-blue-500 underline">
+          <RouterLink to="/policy" class="text-[#069] hover:text-blue-500 underline">
             Privacy Policy
           </RouterLink>.
         </p>
