@@ -7,6 +7,7 @@ import ContactView from '../views/ContactView.vue'
 import KitView from '../views/KitView.vue'
 import GovView from '../views/GovView.vue'
 import BusiView from '../views/BusiView.vue'
+import PolicyView from '../views/PolicyView.vue'
 
 
 const router = createRouter({
@@ -56,6 +57,10 @@ const router = createRouter({
             name: 'business',
             component: BusiView,
         },
+        {   path: '/policy',
+            name: 'policy',
+            component: PolicyView,
+        }
     ],
 })
 
