@@ -36,7 +36,7 @@ import { RouterLink } from 'vue-router';
                 <RouterLink to="/products" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">Product</RouterLink>
               </li>
               <li>
-                <RouterLink to="/News" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">News</RouterLink>
+                <RouterLink to="/news" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">News</RouterLink>
               </li>
               <li>
                 <RouterLink to="/company/careers" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">Career</RouterLink>

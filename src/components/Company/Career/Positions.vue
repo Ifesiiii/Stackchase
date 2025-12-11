@@ -1,4 +1,7 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
+
 const positions = [
     {
         id: 1,
@@ -45,9 +48,10 @@ const positions = [
       </h1>
 
       <div class="space-y-8">
-        <div 
+        <RouterLink 
           v-for="position in positions" 
           :key="position.id"
+          :to="{ name: 'position', params: { id: position.id } }"
           class="border-b border-[#E7E7E7] pb-4 last:border-b-0"
         >
           <div class="flex items-start gap-4">
@@ -63,7 +67,7 @@ const positions = [
               </p>
             </div>
           </div>
-        </div>
+        </RouterLink>
       </div>
     </div>
 </template>

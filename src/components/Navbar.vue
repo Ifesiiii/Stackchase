@@ -26,8 +26,8 @@ const companyLinks = [
 
 const productLinks = [
   { name: 'Ration', path: '/products/ration' },
-  { name: 'Singular API', path: '/products/singular-api' },
-  { name: 'Musi.ng', path: '/products/musing' }
+  { name: 'Singular API', path: '/products/api' },
+  { name: 'Musi.ng', path: '/products/musi' }
 ]
 
 const toggleMobileMenu = () => {
