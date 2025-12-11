@@ -2,13 +2,18 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import CareerView from '../views/CareerView.vue'
+import PosiView from '../views/PosiView.vue'
 import PeopleView from '../views/PeopleView.vue'
 import ContactView from '../views/ContactView.vue'
 import KitView from '../views/KitView.vue'
 import GovView from '../views/GovView.vue'
 import BusiView from '../views/BusiView.vue'
 import PolicyView from '../views/PolicyView.vue'
-
+import RationView from '../views/RationView.vue'
+import ApiView from '../views/ApiView.vue'
+import MusiView from '../views/MusiView.vue'
+import NewsView from '../views/NewsView.vue'
+import SupportView from '../views/SupportView.vue'
 
 const router = createRouter({
     history: createWebHistory(
@@ -37,6 +42,11 @@ const router = createRouter({
             component: CareerView,
         },
         {
+            path: '/company/careers/positions/:id',
+            name: 'position',
+            component: PosiView,
+        },
+        {
             path: '/company/our-people',
             name: 'people',
             component: PeopleView,
@@ -60,6 +70,26 @@ const router = createRouter({
         {   path: '/policy',
             name: 'policy',
             component: PolicyView,
+        },
+        {   path: '/products/ration',
+            name: 'ration',
+            component: RationView,
+        },
+        {   path: '/products/api',
+            name: 'api',
+            component: ApiView,
+        },
+        {   path: '/products/musi',
+            name: 'musi',
+            component: MusiView,
+        },
+        {   path: '/news',
+            name: 'news',
+            component: NewsView,
+        },
+        {   path: '/product-support',
+            name: 'support',
+            component:SupportView,
         }
     ],
 })
