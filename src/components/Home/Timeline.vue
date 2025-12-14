@@ -37,10 +37,10 @@ const timelineEvents = [
 </script>
 
 <template>
-  <section class="font-heading bg-gray-50 pr-16 pl-16 py-[100px] max-w-screen-[1366px]">
+  <section class="font-heading bg-gray-50 px-4 sm:px-8 lg:px-16 py-12 sm:py-16 lg:py-[100px] max-w-screen-[1366px]">
     <div class="mx-auto max-w-7xl">
       <!-- Section Title -->
-      <h2 class="px-4 text-center text-4xl font-semibold text-[#00141F] sm:mb-10 md:mb-20 md:text-5xl leading-10">
+      <h2 class="px-4 text-center text-3xl sm:text-4xl md:text-5xl font-semibold text-[#00141F] mb-12 sm:mb-16 md:mb-20 leading-[38px] sm:leading-10">
         A Journey—Transforming and<br class="hidden md:block"> Innovating Through Time
       </h2>
 
@@ -62,7 +62,7 @@ const timelineEvents = [
         ></div>
 
         <!-- Items - Add timeline-event class -->
-        <div class="grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-6">
+        <div class="grid grid-cols-1 gap-8 sm:gap-10 md:grid-cols-4 md:gap-6">
           <article
             v-for="(event, idx) in timelineEvents"
             :key="`${event.year}-${idx}`"
@@ -78,9 +78,9 @@ const timelineEvents = [
               </div>
 
               <!-- Card content -->
-              <div class="mx-auto max-w-md rounded-lg bg-white p-6 shadow-md ring-1 ring-gray-200">
-                <h3 class="mb-2 text-center text-4xl font-bold leading-none text-[#00141F]">{{ event.year }}</h3>
-                <h4 class="mb-3 text-center text-xl font-semibold text-[#00141F]">{{ event.title }}</h4>
+              <div class="mx-auto max-w-md rounded-lg bg-white p-5 sm:p-6 shadow-md ring-1 ring-gray-200">
+                <h3 class="mb-2 text-center text-3xl sm:text-4xl font-bold leading-none text-[#00141F]">{{ event.year }}</h3>
+                <h4 class="mb-3 text-center text-lg sm:text-xl font-semibold text-[#00141F]">{{ event.title }}</h4>
                 <p class="text-center text-sm leading-6 text-gray-600">
                   {{ event.description }}
                 </p>

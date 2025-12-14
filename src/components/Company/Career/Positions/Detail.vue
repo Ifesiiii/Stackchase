@@ -4,6 +4,21 @@ import { ref, computed } from 'vue';
 
 const route = useRoute();
 
+// Form data
+const formData = ref({
+  firstName: '',
+  lastName: '',
+  email: '',
+  phone: '',
+  resume: null,
+  others: [],
+  linkedin: '',
+  website: ''
+});
+
+const resumeFileName = ref('');
+const othersFileNames = ref([]);
+
 // Would put the API if there's one later
 const positions = {
   1: {
@@ -61,11 +76,45 @@ const positions = {
     preferred: [],
     offer: []
   },
-  // Add other positions...
 };
 
 const positionId = computed(() => parseInt(route.params.id));
 const position = computed(() => positions[positionId.value]);
+
+const handleResumeUpload = (event) => {
+  const file = event.target.files[0];
+  if (file && file.type === 'application/pdf' && file.size <= 10485760) {
+    formData.value.resume = file;
+    resumeFileName.value = file.name;
+  } else {
+    alert('Please upload a PDF file under 10MB');
+    event.target.value = '';
+  }
+};
+
+const handleOthersUpload = (event) => {
+  const files = Array.from(event.target.files);
+  const validFiles = files.filter(file => 
+    file.type === 'application/pdf' && file.size <= 10485760
+  );
+  
+  if (validFiles.length !== files.length) {
+    alert('Some files were rejected. Please upload PDF files under 10MB');
+  }
+  
+  if (validFiles.length + formData.value.others.length <= 3) {
+    formData.value.others = [...formData.value.others, ...validFiles];
+    othersFileNames.value = formData.value.others.map(f => f.name);
+  } else {
+    alert('You can only upload up to 3 files');
+  }
+};
+
+const handleSubmit = () => {
+  console.log('Form submitted:', formData.value);
+  alert('Application submitted successfully!');
+  // Here you would send the form data to your backend
+};
 </script>
 
 <template>
@@ -131,20 +180,20 @@ const position = computed(() => positions[positionId.value]);
               <div>
                 <label class="block text-[#131313] text-base leading-[20px] mb-2">First Name*</label>
                 <input
+                  v-model="formData.firstName"
                   type="text"
                   placeholder="First name"
-                  class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5] text-[#616161]
-                  focus:text-[#131313] focus:outline-none focus:border-blue-500"
+                  class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5] text-[#616161] focus:text-[#131313] focus:outline-none focus:border-blue-500"
                   required
                 />
               </div>
               <div>
                 <label class="block text-[#131313] text-base leading-[20px] mb-2">Last Name*</label>
                 <input
+                  v-model="formData.lastName"
                   type="text"
                   placeholder="Last name"
-                  class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5] text-[#616161]
-                  focus:text-[#131313] focus:outline-none focus:border-blue-500"
+                  class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5] text-[#616161] focus:text-[#131313] focus:outline-none focus:border-blue-500"
                   required
                 />
               </div>
@@ -153,10 +202,10 @@ const position = computed(() => positions[positionId.value]);
             <div>
               <label class="block text-[#131313] text-base leading-[20px] mb-2">Email*</label>
               <input
+                v-model="formData.email"
                 type="email"
                 placeholder="First name"
-                class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5]
-                text-[#616161] focus:text-[#131313] focus:outline-none focus:border-blue-500"
+                class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5] text-[#616161] focus:text-[#131313] focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
@@ -164,35 +213,80 @@ const position = computed(() => positions[positionId.value]);
             <div>
               <label class="block text-[#131313] text-base leading-[20px] mb-2">Phone</label>
               <input
+                v-model="formData.phone"
                 type="tel"
                 placeholder="+234 123 456 7890"
-                class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5]
-                text-[#616161] focus:text-[#131313] focus:outline-none focus:border-blue-500"
+                class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5] text-[#616161] focus:text-[#131313] focus:outline-none focus:border-blue-500"
               />
             </div>
 
-            <div>
-              <label class="block text-[#131313] text-base leading-[20px] mb-2">Resume/CV*</label>
-              <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center bg-[#F5F5F5] hover:border-blue-500 transition-colors cursor-pointer">
-                <div class="text-4xl mb-2">+</div>
-                <p class="text-[#131313] text-base mb-1">Drag and drop file or <span class="text-[#069]">Browse</span></p>
-                <p class="text-[#616161] text-sm leading-[18px]">Allows up to 1 file, max 10 MB, PDFs only</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Resume/CV Upload -->
+              <div>
+                <label class="block text-[#131313] text-base leading-[20px] mb-2">Resume/CV*</label>
+                <label class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center bg-[#F5F5F5] hover:border-blue-500 transition-colors cursor-pointer block">
+                  <input
+                    type="file"
+                    accept=".pdf"
+                    @change="handleResumeUpload"
+                    class="hidden"
+                    required
+                  />
+                  <div class="text-4xl mb-2">+</div>
+                  <p class="text-[#131313] text-base mb-1">
+                    Drag and drop file or <span class="text-[#069]">Browse</span>
+                  </p>
+                  <p class="text-[#616161] text-sm leading-[18px]">
+                    {{ resumeFileName || 'Attach up to 1 file, max 10 MB, PDFs only' }}
+                  </p>
+                </label>
+              </div>
+
+              <!-- Others Upload -->
+              <div>
+                <label class="block text-[#131313] text-base leading-[20px] mb-2">Others ( Cover letter, certifications etc.)</label>
+                <label class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center bg-[#F5F5F5] hover:border-blue-500 transition-colors cursor-pointer block">
+                  <input
+                    type="file"
+                    accept=".pdf"
+                    multiple
+                    @change="handleOthersUpload"
+                    class="hidden"
+                  />
+                  <div class="text-4xl mb-2">+</div>
+                  <p class="text-[#131313] text-base mb-1">
+                    Drag and drop file or <span class="text-[#069]">Browse</span>
+                  </p>
+                  <p class="text-[#616161] text-sm leading-[18px]">
+                    {{ othersFileNames.length > 0 ? othersFileNames.join(', ') : 'Attach up to 3 files, max 10 MB, PDFs only' }}
+                  </p>
+                </label>
               </div>
             </div>
 
             <div>
-              <label class="block text-[#131313] text-base leading-[20px] mb-2">Phone</label>
+              <label class="block text-[#131313] text-base leading-[20px] mb-2">LinkedIn</label>
               <input
-                type="tel"
-                placeholder="+234 123 456 7890"
-                class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5]
-                text-[#616161] focus:text-[#131313] focus:outline-none focus:border-blue-500"
+                v-model="formData.linkedin"
+                type="url"
+                placeholder="https://linkedin.com/in/yourprofile"
+                class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5] text-[#616161] focus:text-[#131313] focus:outline-none focus:border-blue-500"
+              />
+            </div>
+
+            <div>
+              <label class="block text-[#131313] text-base leading-[20px] mb-2">Website</label>
+              <input
+                v-model="formData.website"
+                type="url"
+                placeholder="https://yourwebsite.com"
+                class="w-full px-4 py-3 border border-gray-300 rounded bg-[#F5F5F5] text-[#616161] focus:text-[#131313] focus:outline-none focus:border-blue-500"
               />
             </div>
 
             <button
               type="submit"
-              class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              class="bg-[#069] text-white text-xl leading-6 px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               Submit Application
             </button>

@@ -13,7 +13,6 @@ import M4 from '../../../assets/img/m4.png'
 
 
 
-
 const activeTab = ref('logo-packs');
 
 const logoPacksAssets = ref([
@@ -90,10 +89,10 @@ const productImages = ref([
   }
 ]);
 
-const handleDownload = (filename) => {
+const handleDownload = (filename, imageSource) => {
   // Create a temporary link and trigger download
   const link = document.createElement('a');
-  link.href = `/downloads/${filename}`;
+  link.href = imageSource;  // Use the actual image source
   link.download = filename;
   document.body.appendChild(link);
   link.click();
@@ -114,8 +113,8 @@ const handleDownloadAll = (type) => {
   }
   
   // Download each asset
-  assets.forEach(asset => {
-    setTimeout(() => handleDownload(asset.filename), 100);
+  assets.forEach((asset, index) => {
+    setTimeout(() => handleDownload(asset.filename, asset.image), index * 200);
   });
   
   console.log(`Downloading all ${assets.length} ${type}`);
@@ -186,7 +185,7 @@ const handleDownloadAll = (type) => {
               <div class="flex justify-between items-center">
                 <h3 class="text-[#131313] text-[28px] leading-[34px]">{{ asset.title }}</h3>
                 <button
-                  @click="handleDownload(asset.filename)"
+                  @click="handleDownload(asset.filename, asset.image)"
                   class="p-2 hover:bg-gray-100 rounded-lg transition-colors"
                   :aria-label="`Download ${asset.title}`"
                 >
@@ -230,7 +229,7 @@ const handleDownloadAll = (type) => {
               <div class="flex justify-between items-center">
                 <h3 class="text-[#131313] text-[28px] leading-[34px]">{{ asset.title }}</h3>
                 <button
-                  @click="handleDownload(asset.filename)"
+                  @click="handleDownload(asset.filename, asset.image)"
                   class="p-2 hover:bg-gray-100 rounded-lg transition-colors"
                   :aria-label="`Download ${asset.title}`"
                 >
@@ -276,7 +275,7 @@ const handleDownloadAll = (type) => {
               <div class="flex justify-between items-center">
                 <h3 class="text-[#131313] text-[28px] leading-[34px]">{{ asset.title }}</h3>
                 <button
-                  @click="handleDownload(asset.filename)"
+                  @click="handleDownload(asset.filename, asset.image)"
                   class="p-2 hover:bg-gray-100 rounded-lg transition-colors"
                   :aria-label="`Download ${asset.title}`"
                 >
