@@ -10,6 +10,7 @@ import Talk from '../components/Home/Talk.vue'
 import Product from '../components/Home/Product.vue'
 import Innovation from '../components/Home/Innovation.vue'
 import Footer from '../components/Footer.vue'
+import Cookies from '../components/Cookies.vue'
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -43,6 +44,7 @@ onMounted(() => {
     <Product />
     <Innovation />
     <Footer />
+    <Cookies />
   </div>
 </template>
 

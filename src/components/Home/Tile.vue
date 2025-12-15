@@ -20,7 +20,7 @@ defineProps({
     </div>
 
     <!-- Content -->
-    <div class="pt-6 pb-6">
+    <div class="pt-6 pb-6 pl-2 pr-2">
       <h3 class="text-[32px] font-medium text-[#020202] mb-3 leading-8">
         {{ title }}
       </h3>

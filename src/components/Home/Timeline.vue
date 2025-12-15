@@ -10,28 +10,32 @@ const timelineEvents = [
     title: 'Lopworks Founded',
     description:
       'Lopworks was established as an IT company delivering consulting and system integration services to enterprises across diverse industries.',
-    position: 'bottom' 
+    position: 'bottom',
+    color: '#CCE0EB'
   },
   {
     year: '2020',
     title: 'Stackchase Founded',
     description:
       'Stackchase, a Lopworks Limited company, emerged from a need for autonomy—to design and develop reliable IT platforms that we own.',
-    position: 'top' 
+    position: 'top',
+    color: '#80B3CC'
   },
   {
     year: '2023',
     title: 'Started Ration Build',
     description:
       'Started developing Ration as an on-premises email platform, first adopted by the Nigerian Army and then the Ogun State Government.',
-    position: 'bottom' 
+    position: 'bottom',
+    color: '#2A80AA'
   },
   {
     year: '2025',
     title: 'Ration Launched',
     description:
       'Launching Ration Cloud as a secure messaging, meeting, and collaboration suite designed for modern teams.',
-    position: 'top' 
+    position: 'top',
+    color: '#069'
   }
 ]
 </script>
@@ -58,7 +62,7 @@ const timelineEvents = [
         <!-- Vertical line (mobile) -->
         <div
           aria-hidden="true"
-          class="absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 -translate-x-1/2 md:hidden"
+          class="absolute left-[6px] top-0 bottom-0 w-px bg-gray-300 md:hidden"
         ></div>
 
         <!-- Items - Add timeline-event class -->
@@ -71,17 +75,20 @@ const timelineEvents = [
             <div class="relative block md:hidden">
               <!-- Dot on vertical line -->
               <div
-                class="absolute left-1/2 z-10 -translate-x-1/2"
+                class="absolute left-0 z-10"
                 aria-hidden="true"
               >
-                <div class="h-4 w-4 rounded-full bg-gray-400 border-4 border-white shadow-md"></div>
+                <div 
+                  class="h-3 w-3 rounded-full border-2 border-white shadow-md"
+                  :style="{ backgroundColor: event.color }"
+                ></div>
               </div>
 
               <!-- Card content -->
-              <div class="mx-auto max-w-md rounded-lg bg-white p-5 sm:p-6 shadow-md ring-1 ring-gray-200">
-                <h3 class="mb-2 text-center text-3xl sm:text-4xl font-bold leading-none text-[#00141F]">{{ event.year }}</h3>
-                <h4 class="mb-3 text-center text-lg sm:text-xl font-semibold text-[#00141F]">{{ event.title }}</h4>
-                <p class="text-center text-sm leading-6 text-gray-600">
+              <div class="ml-6 bg-white">
+                <h3 class="mb-2 text-left text-3xl sm:text-4xl font-bold leading-none text-[#00141F]">{{ event.year }}</h3>
+                <h4 class="mb-3 text-left text-lg sm:text-xl font-semibold text-[#00141F]">{{ event.title }}</h4>
+                <p class="text-left text-sm leading-6 text-gray-600">
                   {{ event.description }}
                 </p>
               </div>

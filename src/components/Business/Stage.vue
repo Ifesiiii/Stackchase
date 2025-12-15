@@ -75,7 +75,7 @@ const getIcon = (title) => {
           class="bg-white p-8 rounded-2xl border-4 border-[#F5F9FB] shadow-sm hover:shadow-md transition-shadow duration-300"
         >
           <!-- Icon -->
-          <div class="text-[#131313] mb-6" v-html="getIcon(stage.title)"></div>
+          <div class="bg-[#F5F9FB] text-[#131313] mb-6 w-12 h-12 flex items-center justify-center rounded-full" v-html="getIcon(stage.title)"></div>
 
           <!-- Title -->
           <h3 class="text-[28px] font-semibold text-[#131313] mb-4 leading-8">

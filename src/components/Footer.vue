@@ -18,54 +18,54 @@ import { RouterLink } from 'vue-router';
             alt="Stackchase"
             />
           </div>
-          <p class="text-xl leading-[30px] text-[#E5E5E5]">
+          <p class="text-base md:text-xl leading-[24px] md:leading-[30px] text-[#E5E5E5]">
             Stackchase Limited is a technology company<br class="hidden md:inline"> building secure, high-performance platforms<br class="hidden md:inline"> that power modern collaboration,<br class="hidden md:inline"> communication and digital operations.
           </p>
         </div>
 
         
-        <div class="flex gap-16 md:gap-24 lg:gap-32">
+        <div class="grid grid-cols-2 md:flex md:flex-row gap-8 md:gap-16 lg:gap-24 xl:gap-32">
           <!-- Company Links -->
           <div>
-            <h3 class="text-xl leading-6 font-semibold mb-6">Company</h3>
-            <ul class="space-y-3">
+            <h3 class="text-lg md:text-xl leading-6 font-semibold mb-4 md:mb-6">Company</h3>
+            <ul class="space-y-2 md:space-y-3">
               <li>
-                <RouterLink to="/company/about" class="text-xl text[#E5E5E5] hover:text-white transition-colors">About</RouterLink>
+                <RouterLink to="/company/about" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">About</RouterLink>
               </li>
               <li>
-                <RouterLink to="/products" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">Product</RouterLink>
+                <RouterLink to="/products" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">Product</RouterLink>
               </li>
               <li>
-                <RouterLink to="/news" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">News</RouterLink>
+                <RouterLink to="/news" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">News</RouterLink>
               </li>
               <li>
-                <RouterLink to="/company/careers" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">Career</RouterLink>
+                <RouterLink to="/company/careers" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">Career</RouterLink>
               </li>
             </ul>
           </div>
 
           <!-- Industry Links -->
           <div>
-            <h3 class="text-xl leading-6 font-semibold mb-6">Industry</h3>
-            <ul class="space-y-3">
+            <h3 class="text-lg md:text-xl leading-6 font-semibold mb-4 md:mb-6">Industry</h3>
+            <ul class="space-y-2 md:space-y-3">
               <li>
-                <RouterLink to="/government" class="text-xl text-[#E5E5E5] hover:text-white transition-colors">Government</RouterLink>
+                <RouterLink to="/government" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">Government</RouterLink>
               </li>
               <li>
-                <RouterLink to="/business" class="text-xl text-[#E5E5E5]  hover:text-white transition-colors">Business</RouterLink>
+                <RouterLink to="/business" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">Business</RouterLink>
               </li>
             </ul>
           </div>
 
           <!-- Support Links -->
-          <div>
-            <h3 class="text-xl leading-6 font-semibold mb-6">Support</h3>
-            <ul class="space-y-3">
+          <div class="col-span-2 md:col-span-1">
+            <h3 class="text-lg md:text-xl leading-6 font-semibold mb-4 md:mb-6">Support</h3>
+            <ul class="space-y-2 md:space-y-3">
               <li>
-                <RouterLink to="/product-support" class="text-xl text-[#E5E5E5]  hover:text-white transition-colors">Product support</RouterLink>
+                <RouterLink to="/product-support" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">Product support</RouterLink>
               </li>
               <li>
-                <RouterLink to="/Contact" class="text-xl text-[#E5E5E5]  hover:text-white transition-colors">Contact Us</RouterLink>
+                <RouterLink to="/Contact" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">Contact Us</RouterLink>
               </li>
             </ul>
           </div>
@@ -74,20 +74,20 @@ import { RouterLink } from 'vue-router';
 
       <!-- Bottom Bar -->
       <div class="border-t border-[#2A3F52] pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div class="flex flex-col md:flex-row items-center gap-4 text-sm">
-          <span class="flex text-xl leading-7 items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <div class="flex flex-col md:flex-row items-center gap-3 md:gap-4 text-sm order-2 md:order-1 w-full md:w-auto">
+          <a href="#" class="text-base md:text-xl leading-6 hover:text-white transition-colors self-start md:self-center">Legal notice</a>
+          <span class="text-[#E7E7E7] hidden md:inline">|</span>
+          <span class="flex text-sm md:text-xl leading-7 items-center gap-2 self-start md:self-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="flex-shrink-0">
             <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#E5E5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M15 14.25C14.5278 14.8796 13.8694 15.3448 13.1181 15.5794C12.3669 15.8141 11.5608 15.8065 10.8141 15.5576C10.0675 15.3087 9.41804 14.8312 8.95784 14.1927C8.49764 13.5542 8.25 12.7871 8.25 12C8.25 11.2129 8.49764 10.4458 8.95784 9.80734C9.41804 9.16884 10.0675 8.69133 10.8141 8.44244C11.5608 8.19355 12.3669 8.1859 13.1181 8.42057C13.8694 8.65525 14.5278 9.12035 15 9.75" stroke="#E5E5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             Copyright 2025 Stackchase Limited. All right reserved.
           </span>
-          <span class="text-[#E7E7E7] hidden md:inline">|</span>
-          <a href="#" class="text-xl leading-6 hover:text-white transition-colors">Legal notice</a>
         </div>
 
-        <!-- Social Icons -->
-        <div class="flex items-center gap-4">
+        <!-- Social Icons - Second on mobile, Second on desktop (right side) -->
+        <div class="flex items-center gap-4 order-1 md:order-2 self-start md:self-center">
           <!-- Email -->
           <a href="#" class="hover:opacity-80 transition-opacity">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
