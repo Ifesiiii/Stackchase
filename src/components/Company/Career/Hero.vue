@@ -1,7 +1,16 @@
 <script setup>
-import { ref } from 'vue'
 import Navtop from './Navtop.vue'
 import steps from '../../../assets/img/steps.png'
+
+const scrollToPositions = () => {
+  const positionsSection = document.getElementById('open-positions');
+  if (positionsSection) {
+    positionsSection.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+}
 </script>
 
 <template>
@@ -28,9 +37,11 @@ import steps from '../../../assets/img/steps.png'
               Shape the Future of<br> Reliable, Scalable<br>Platforms
             </h1>
 
-            <button class="bg-white text-[#002233] px-10 py-3 rounded font-semibold hover:bg-[#006699]
-            hover:text-white transition">
-            View Open Roles
+            <button 
+              @click="scrollToPositions"
+              class="bg-white text-[#002233] px-10 py-3 rounded font-semibold hover:bg-[#006699] hover:text-white transition"
+            >
+              View Open Roles
             </button>
           </div>
         </div>

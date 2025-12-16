@@ -39,7 +39,7 @@ const values = [
           class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300"
         >
           <!-- Number -->
-          <div class="text-[28px] font-semibold text-[#000000] mb-6 leading-7">
+          <div class="text-[28px] font-semibold text-[#000000] mb-6 leading-7 bg-[#F5F9FB] w-12 h-12 flex items-center justify-center rounded-full">
             {{ value.number }}
           </div>
 

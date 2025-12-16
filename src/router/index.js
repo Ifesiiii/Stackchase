@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import CareerView from '../views/CareerView.vue'
-import PosiView from '../views/PosiView.vue'
 import PeopleView from '../views/PeopleView.vue'
 import ContactView from '../views/ContactView.vue'
 import KitView from '../views/KitView.vue'
@@ -40,11 +39,6 @@ const router = createRouter({
             path: '/company/careers',
             name: 'career',
             component: CareerView,
-        },
-        {
-            path: '/company/careers/positions/:id',
-            name: 'position',
-            component: PosiView,
         },
         {
             path: '/company/our-people',
