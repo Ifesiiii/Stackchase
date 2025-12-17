@@ -57,7 +57,7 @@ const values = [
           class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300"
         >
           <!-- Number -->
-          <div class="bg-[#F5F9FB] text-[28px] font-semibold text-[#000000] mb-6 leading-7 w-12 h-12 flex items-center justify-center rounded-full">
+          <div class="bg-[#F5F9FB] text-[28px] font-semibold text-[#000000] mb-6 leading-7 w-10 h-10 flex items-center justify-center rounded-full">
             {{ value.number }}
           </div>
 

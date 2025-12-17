@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import Tcard from './Tcard.vue';
-import man1 from '../../../assets/img/man1.png'
+import man1 from '../../../assets/img/CEO2.png'
 import woman1 from '../../../assets/img/woman1.png'
 import woman2 from '../../../assets/img/woman2.png'
 import man3 from '../../../assets/img/man3.png'
@@ -20,7 +20,7 @@ const team = [
   },
   {
     id: 2,
-    image: woman1,
+    // image: woman1,
     name: 'Lisa Teni',
     title: 'Lead Sales',
     bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',
@@ -28,7 +28,7 @@ const team = [
   },
   {
     id: 3,
-    image: woman2,
+    // image: woman2,
     name: 'Ayoola Hassan',
     title: 'C.E.O',
     bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',
@@ -36,7 +36,7 @@ const team = [
   },
   {
     id: 4,
-    image: man3,
+    // image: man3,
     name: 'Lisa Teni',
     title: 'Lead Sales',
     bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',

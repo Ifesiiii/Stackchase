@@ -12,7 +12,7 @@ const positions = [
     },
     {
         id: 2,
-        title: 'Full-stack Developer(Elixir)',
+        title: 'Full-stack Developer (Elixir)',
         location: 'Lagos',
         workType: 'Hybrid',
         employmentType: 'Full time'
@@ -35,7 +35,7 @@ const positions = [
 </script>
 
 <template>
-    <div id="open-positions" class="font-heading max-w-7xl max-w-screen-[1366px] mx-auto mb-[100px] sm:px-8 scroll-mt-8">
+    <div id="open-positions" class="font-heading max-w-7xl max-w-screen-[1366px] mx-auto mb-[100px] px-8 scroll-mt-8">
       <h1 class="text-5xl font-bold mb-[68px] leading-[56px] tracking-[-0.5px]">
         Open Positions. <span>({{ positions.length }})</span>
       </h1>
@@ -44,7 +44,7 @@ const positions = [
         <div 
           v-for="position in positions" 
           :key="position.id"
-          class="block border-b border-[#E7E7E7] py-8 first:pt-0 last:border-b-0 hover:opacity-80 transition-opacity"
+          class="block border-b border-[#E7E7E7] py-8 first:pt-0 last:border-b-0"
         >
           <div class="flex items-start gap-4">
             <span class="text-[#131313] text-[40px] font-semibold leading-[50px] tracking-[-0.5px]">
@@ -56,6 +56,15 @@ const positions = [
               </h2>
               <p class="text-[#616161] text-xl leading-7">
                 {{ position.location }} — {{ position.workType }} — {{ position.employmentType }}
+              </p>
+              <p class="text-[#616161] text-xl leading-7">
+                Interested candidates are to send their resume to 
+                <a 
+                  href="mailto:careers@stackchase.com?subject=Application for {{ position.title }}" 
+                  class="text-[#006699] hover:underline transition-all"
+                >
+                  careers@stackchase.com
+                </a>
               </p>
             </div>
           </div>

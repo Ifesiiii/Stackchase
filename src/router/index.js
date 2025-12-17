@@ -13,6 +13,8 @@ import ApiView from '../views/ApiView.vue'
 import MusiView from '../views/MusiView.vue'
 import NewsView from '../views/NewsView.vue'
 import SupportView from '../views/SupportView.vue'
+import LegalView from '../views/LegalView.vue'
+
 
 const router = createRouter({
     history: createWebHistory(
@@ -83,6 +85,10 @@ const router = createRouter({
         },
         {   path: '/product-support',
             name: 'support',
+            component:SupportView,
+        },
+        {   path: '/legal-notice',
+            name: 'legal',
             component:SupportView,
         }
     ],

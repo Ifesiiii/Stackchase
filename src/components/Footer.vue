@@ -79,7 +79,7 @@ import { RouterLink } from 'vue-router';
           <div class="flex justify-between items-center">
             <!-- Legal Links -->
             <div class="text-base">
-              <a href="#" class="hover:text-white transition-colors">Legal notice</a>
+              <RouterLink to="/legal-notice" class="hover:text-white transition-colors">Legal notice</RouterLink>
             </div>
 
             <!-- Social Icons -->
@@ -147,9 +147,9 @@ import { RouterLink } from 'vue-router';
               Copyright 2025 Stackchase Limited. All right reserved.
             </span>
             <span class="text-[#E7E7E7]">|</span>
-            <RouterLink to="/privacy" class="text-xl leading-6 hover:text-white transition-colors">Privacy policy</RouterLink>
+            <RouterLink to="/policy" class="text-xl leading-6 hover:text-white transition-colors">Privacy policy</RouterLink>
             <span class="text-[#E7E7E7]">|</span>
-            <a href="#" class="text-xl leading-6 hover:text-white transition-colors">Legal notice</a>
+            <RouterLink to="/legal-notice" class="text-xl leading-6 hover:text-white transition-colors">Legal notice</RouterLink>
           </div>
 
           <!-- Right Side: Social Icons -->
