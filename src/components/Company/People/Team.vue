@@ -18,30 +18,30 @@ const team = [
     bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',
     linkedin: '#'
   },
-  {
-    id: 2,
-    // image: woman1,
-    name: 'Lisa Teni',
-    title: 'Lead Sales',
-    bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',
-    linkedin: '#'
-  },
-  {
-    id: 3,
-    // image: woman2,
-    name: 'Ayoola Hassan',
-    title: 'C.E.O',
-    bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',
-    linkedin: '#'
-  },
-  {
-    id: 4,
-    // image: man3,
-    name: 'Lisa Teni',
-    title: 'Lead Sales',
-    bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',
-    linkedin: '#'
-  }
+  // {
+  //   id: 2,
+  //   // image: woman1,
+  //   name: 'Lisa Teni',
+  //   title: 'Lead Sales',
+  //   bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',
+  //   linkedin: '#'
+  // },
+  // {
+  //   id: 3,
+  //   // image: woman2,
+  //   name: 'Ayoola Hassan',
+  //   title: 'C.E.O',
+  //   bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',
+  //   linkedin: '#'
+  // },
+  // {
+  //   id: 4,
+  //   // image: man3,
+  //   name: 'Lisa Teni',
+  //   title: 'Lead Sales',
+  //   bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',
+  //   linkedin: '#'
+  // }
 ];
 
 const openModal = (member) => {

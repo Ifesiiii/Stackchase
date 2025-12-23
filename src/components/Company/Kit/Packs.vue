@@ -206,7 +206,7 @@ const handleDownloadAll = (type) => {
             <h2 class="text-5xl text-[#131313] leading-[56px] tracking-[-0.5px]">Brand Manual</h2>
             <button
               @click="handleDownloadAll('manuals')"
-              class="flex text-[#131313] text-xl leading-6 tracking-[-0.5px] items-center border border-[#DDD] rounded-lg hover:bg-gray-50 transition-colors"
+              class="flex text-[#131313] text-xl leading-6 tracking-[-0.5px] items-center gap-2 px-4 py-2 border border-[#DDD] rounded-lg hover:bg-gray-50 transition-colors"
             >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M8.0625 10.3125L12 14.25L15.9375 10.3125" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

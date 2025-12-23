@@ -12,7 +12,7 @@ const toggleAccordion = (item) => {
 
 
 <template>
-  <section class="bg-[#F8FBFC] px-6 max-w-screen-[1366px]  pt-[50px] pb-[50px] font-heading">
+  <section class="bg-[#F8FBFC] px-6 max-w-screen-[1366px]  pt-[50px] pb-[50px] mb-[50px] font-heading">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <!-- Left Column - Image -->
