@@ -13,7 +13,7 @@ const team = [
   {
     id: 1,
     image: man1,
-    name: 'Ayoola Hassan',
+    name: 'Ademola Osindero',
     title: 'C.E.O',
     bio: 'Founded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.\n\nFounded in 2020, Stackchase began with a simple conviction: technology should empower, not restrict. A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.',
     linkedin: '#'

@@ -92,7 +92,7 @@ import { RouterLink } from 'vue-router';
                 </svg>
               </a>
               <!-- Facebook -->
-              <a href="#" class="hover:opacity-80 transition-opacity">
+              <a href="https://www.facebook.com/share/19oe3J36pF/" class="hover:opacity-80 transition-opacity">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M15.75 8.24999H14.25C13.9542 8.24875 13.6611 8.3061 13.3875 8.41873C13.114 8.53137 12.8654 8.69705 12.6563 8.90623C12.4471 9.11541 12.2814 9.36394 12.1688 9.63749C12.0561 9.91103 11.9988 10.2042 12 10.5V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -100,13 +100,13 @@ import { RouterLink } from 'vue-router';
                 </svg>
               </a>
               <!-- Twitter -->
-              <a href="#" class="hover:opacity-80 transition-opacity">
+              <a href="https://x.com/StackchaseLtd?t=nW2dZ-uWAL4jEPyszg0C4A&s=09" class="hover:opacity-80 transition-opacity">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z" fill="white"/>
                 </svg>
               </a>
               <!-- LinkedIn -->
-              <a href="#" class="hover:opacity-80 transition-opacity">
+              <a href="https://www.linkedin.com/company/stackchase/" class="hover:opacity-80 transition-opacity">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M19.875 3.375H4.125C3.71079 3.375 3.375 3.71079 3.375 4.125V19.875C3.375 20.2892 3.71079 20.625 4.125 20.625H19.875C20.2892 20.625 20.625 20.2892 20.625 19.875V4.125C20.625 3.71079 20.2892 3.375 19.875 3.375Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M11.25 10.5V16.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -116,7 +116,7 @@ import { RouterLink } from 'vue-router';
                 </svg>
               </a>
               <!-- Instagram -->
-              <a href="#" class="hover:opacity-80 transition-opacity">
+              <a href="https://www.instagram.com/stackchaseltd?igsh=N251MWU3NDNwcDVt" class="hover:opacity-80 transition-opacity">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
                 <path d="M16.125 3.375H7.875C5.38972 3.375 3.375 5.38972 3.375 7.875V16.125C3.375 18.6103 5.38972 20.625 7.875 20.625H16.125C18.6103 20.625 20.625 18.6103 20.625 16.125V7.875C20.625 5.38972 18.6103 3.375 16.125 3.375Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -162,7 +162,7 @@ import { RouterLink } from 'vue-router';
               </svg>
             </a>
             <!-- Facebook -->
-            <a href="#" class="hover:opacity-80 transition-opacity">
+            <a href="https://www.facebook.com/share/19oe3J36pF/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M15.75 8.24999H14.25C13.9542 8.24875 13.6611 8.3061 13.3875 8.41873C13.114 8.53137 12.8654 8.69705 12.6563 8.90623C12.4471 9.11541 12.2814 9.36394 12.1688 9.63749C12.0561 9.91103 11.9988 10.2042 12 10.5V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -170,13 +170,13 @@ import { RouterLink } from 'vue-router';
               </svg>
             </a>
             <!-- Twitter -->
-            <a href="#" class="hover:opacity-80 transition-opacity">
+            <a href="https://x.com/StackchaseLtd?t=nW2dZ-uWAL4jEPyszg0C4A&s=09" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z" fill="white"/>
               </svg>
             </a>
             <!-- LinkedIn -->
-            <a href="#" class="hover:opacity-80 transition-opacity">
+            <a href="https://www.linkedin.com/company/stackchase/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M19.875 3.375H4.125C3.71079 3.375 3.375 3.71079 3.375 4.125V19.875C3.375 20.2892 3.71079 20.625 4.125 20.625H19.875C20.2892 20.625 20.625 20.2892 20.625 19.875V4.125C20.625 3.71079 20.2892 3.375 19.875 3.375Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M11.25 10.5V16.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -186,7 +186,7 @@ import { RouterLink } from 'vue-router';
               </svg>
             </a>
             <!-- Instagram -->
-            <a href="#" class="hover:opacity-80 transition-opacity">
+            <a href="https://www.instagram.com/stackchaseltd?igsh=N251MWU3NDNwcDVt" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
               <path d="M16.125 3.375H7.875C5.38972 3.375 3.375 5.38972 3.375 7.875V16.125C3.375 18.6103 5.38972 20.625 7.875 20.625H16.125C18.6103 20.625 20.625 18.6103 20.625 16.125V7.875C20.625 5.38972 18.6103 3.375 16.125 3.375Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
