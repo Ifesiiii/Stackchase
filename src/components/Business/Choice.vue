@@ -33,7 +33,7 @@ const toggleAccordion = (item) => {
           <!-- Accordion Items -->
           <div class="">
             <!-- Data Sovereignty -->
-            <div class="bg-white rounded-lg overflow-hidden">
+            <div class="rounded-lg overflow-hidden">
               <button 
                 @click="toggleAccordion('dataSovereignty')"
                 class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
@@ -63,7 +63,7 @@ const toggleAccordion = (item) => {
             </div>
 
             <!-- Security & Compliance -->
-            <div class="bg-white rounded-lg overflow-hidden">
+            <div class="rounded-lg overflow-hidden">
               <button 
                 @click="toggleAccordion('security')"
                 class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
@@ -93,7 +93,7 @@ const toggleAccordion = (item) => {
             </div>
 
             <!-- Scalability & Reliability -->
-            <div class="bg-white rounded-lg overflow-hidden">
+            <div class="rounded-lg overflow-hidden">
               <button 
                 @click="toggleAccordion('scalability')"
                 class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
@@ -123,7 +123,7 @@ const toggleAccordion = (item) => {
             </div>
 
             <!-- Operational Efficiency -->
-            <div class="bg-white rounded-lg overflow-hidden">
+            <div class="rounded-lg overflow-hidden">
               <button 
                 @click="toggleAccordion('efficiency')"
                 class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"

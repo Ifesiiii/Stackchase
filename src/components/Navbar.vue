@@ -47,7 +47,7 @@ const closeMobileMenu = () => {
 </script>
 
 <template>
-    <nav class="flex items-center justify-between py-0 mx-auto relative z-20">
+    <nav class="flex items-center justify-between text-[18px] py-0 mx-auto relative z-20">
       <!-- Logo -->
       <RouterLink class="flex items-center" to="/" @click="closeMobileMenu">
         <img :src="logo" class="w-full h-full"/>

@@ -11,7 +11,7 @@
       </p>
       <a 
         href="mailto:media@stackchase.com" 
-        class="text-2xl leading-[30px] hover:text-blue-600 transition-colors"
+        class="text-2xl leading-[30px] hover:text-[#069] transition-colors"
       >
         media@stackchase.com
       </a>

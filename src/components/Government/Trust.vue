@@ -26,7 +26,7 @@
       <!-- Cards Section -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1: With Ration -->
-        <div class="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
+        <div class="bg-white rounded-lg p-8 border border-[#E7E7E7]">
           <h3 class="text-[28px] mb-4 text-[#131313] leading-8 tracking-[-0.14px]">
             With Ration
           </h3>
@@ -36,7 +36,7 @@
         </div>
 
         <!-- Card 2: With Singular API -->
-        <div class="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
+        <div class="bg-white rounded-lg p-8 border border-[#E7E7E7]">
           <h3 class="text-[28px] mb-4 text-[#131313] leading-8 tracking-[-0.14px]">
             With Singular API
           </h3>
@@ -46,7 +46,7 @@
         </div>
 
         <!-- Card 3: With Musi.ng -->
-        <div class="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
+        <div class="bg-white rounded-lg p-8 border border-[#E7E7E7]">
           <h3 class="text-[28px] mb-4 text-[#131313] leading-8 tracking-[-0.14px]">
             With Musi.ng
           </h3>

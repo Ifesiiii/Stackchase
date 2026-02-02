@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+    <div class="rounded-2xl bg-[#F8FBFC] overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
           <!-- Image -->
           <div class="aspect-auto overflow-hidden">
             <img

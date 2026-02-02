@@ -174,7 +174,7 @@ const handleDownloadAll = (type) => {
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div v-for="asset in logoPacksAssets" :key="asset.id" class="group">
+            <div v-for="asset in logoPacksAssets" :key="asset.id" class="group border border-[#E7E7E7] rounded-lg">
               <div :class="[asset.bgColor,'rounded-lg overflow-hidden mb-4 aspect-video flex items-center justify-center']">
                 <img
                   :src="asset.image"
@@ -182,7 +182,7 @@ const handleDownloadAll = (type) => {
                   class="w-[200px] h-[101px] object-contain"
                 />
               </div>
-              <div class="flex justify-between items-center">
+              <div class="flex justify-between items-center mx-2 my-2">
                 <h3 class="text-[#131313] text-[28px] leading-[34px]">{{ asset.title }}</h3>
                 <button
                   @click="handleDownload(asset.filename, asset.image)"
@@ -218,7 +218,7 @@ const handleDownloadAll = (type) => {
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div v-for="asset in brandManuals" :key="asset.id" class="group">
+            <div v-for="asset in brandManuals" :key="asset.id" class="group border border-[#E7E7E7] rounded-lg">
               <div class="rounded-lg overflow-hidden mb-4  flex items-center justify-center">
                 <img
                   :src="asset.image"
@@ -226,7 +226,7 @@ const handleDownloadAll = (type) => {
                   class="w-full h-full object-cover"
                 />
               </div>
-              <div class="flex justify-between items-center">
+              <div class="flex justify-between items-center mx-2 my-2">
                 <h3 class="text-[#131313] text-[28px] leading-[34px]">{{ asset.title }}</h3>
                 <button
                   @click="handleDownload(asset.filename, asset.image)"
@@ -264,7 +264,7 @@ const handleDownloadAll = (type) => {
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div v-for="asset in productImages" :key="asset.id" class="group">
+            <div v-for="asset in productImages" :key="asset.id" class="group border border-[border border-[#E7E7E7]]">
               <div class="rounded-lg overflow-hidden mb-4">
                 <img
                   :src="asset.image"
@@ -272,7 +272,7 @@ const handleDownloadAll = (type) => {
                   class="w-full h-64 object-cover"
                 />
               </div>
-              <div class="flex justify-between items-center">
+              <div class="flex justify-between items-center mx-2 my-2">
                 <h3 class="text-[#131313] text-[28px] leading-[34px]">{{ asset.title }}</h3>
                 <button
                   @click="handleDownload(asset.filename, asset.image)"

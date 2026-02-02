@@ -8,7 +8,7 @@ useTalkAnimations()
 </script>
 
 <template>
-  <section class="font-heading talk-section relative overflow-hidden mx-auto mb-12 sm:mb-16 lg:mb-[100px] h-[600px] sm:h-[650px] lg:h-[659px] max-w-screen-[1366px]">
+  <section class="font-heading talk-section relative overflow-hidden mx-auto mb-12 sm:mb-16 lg:mb-[50px] h-[600px] sm:h-[650px] lg:h-[659px] max-w-screen-[1366px]">
     <div class="absolute inset-0">
       <div 
         class="talk-background relative h-full bg-cover bg-center bg-no-repeat"

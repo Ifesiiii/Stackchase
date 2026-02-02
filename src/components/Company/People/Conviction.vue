@@ -2,7 +2,8 @@
 </script>
 
 <template>
-    <div class="font-heading bg-[#F8FBFC] max-w-7xl max-w-screen-[1366px] mx-auto mb-[100px] px-8 py-[50px]">
+  <div class="bg-[#F8FBFC]">
+    <div class="font-heading max-w-7xl max-w-screen-[1366px] mx-auto px-8 py-[100px]">
       <!-- Main Heading -->
       <h1 class="text-[40px] font-semibold mb-16 leading-[56px] tracking-[-0.5px]">
         Stackchase is driven by the conviction that technology should empower people, not limit them.
@@ -33,4 +34,5 @@
         </div>
       </div>
     </div>
+  </div>
 </template>

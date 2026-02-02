@@ -1,7 +1,7 @@
 <script setup>
 import { useProductAnimations } from '../../composables/useSmoothScroll'
 import Tile from './Tile.vue'
-import chat from '../../assets/img/chat4.png'
+import ration from '../../assets/img/ration.png'
 import hawk from '../../assets/img/Redhawk.png'
 import musi from '../../assets/img/musi.png'
 
@@ -11,7 +11,7 @@ useProductAnimations()
 const products = [
   {
     id: 1,
-    image: chat,
+    image: ration,
     title: 'Ration',
     description: 'A messaging, meeting and collaboration platform that offers intuitive, flexible and extensible set of features for all businesses.'
   },
@@ -19,7 +19,7 @@ const products = [
     id: 2,
     image: hawk,
     title: 'Red Hawk',
-    description: 'A high-performance integration and API platform running on a single powerful engine.'
+    description: 'A next-generation flow engine and API Gateway runtime, built with a modern, high-performance, cloud-native execution model'
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const products = [
 </script>
 
 <template>
-  <section class="font-heading px-8 pb-[100px]">
+  <section class="font-heading px-8 bg-[#F8FBFC] py-[50px]">
     <div class="max-w-7xl max-w-screen-[1366px] mx-auto">
       <!-- Section Title -->
       <h2 class="text-4xl md:text-5xl font-semibold text-center text-[#131313] mb-[62px] leading-[56px] tracking-[-0.5px]">
@@ -39,7 +39,7 @@ const products = [
       </h2>
 
       <!-- Products Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
           v-for="product in products"
           :key="product.id"

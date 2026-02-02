@@ -110,7 +110,7 @@ const timelineEvents = [
 
               <!-- Year label (aligned with connector) -->
               <div
-                class="absolute left-1/2 z-20 -translate-x-1/2 text-4xl font-bold"
+                class="absolute left-1/2 z-20 -translate-x-1/2 text-[56px] font-bold"
                 :class="event.position === 'top' ? 'top-1/2 translate-y-3' : 'bottom-1/2 -translate-y-3'"
               >
                 {{ event.year }}
@@ -122,8 +122,8 @@ const timelineEvents = [
                 class="absolute bottom-1/2 left-0 right-0 z-20 flex justify-center pb-16"
               >
                 <div class="max-w-xs px-4">
-                  <h4 class="mb-3 text-xl font-semibold">{{ event.title }}</h4>
-                  <p class="text-sm leading-relaxed text-gray-600">
+                  <h4 class="mb-3 text-2xl font-semibold">{{ event.title }}</h4>
+                  <p class="text-base leading-relaxed text-gray-600">
                     {{ event.description }}
                   </p>
                 </div>
@@ -135,8 +135,8 @@ const timelineEvents = [
                 class="absolute left-0 right-0 top-1/2 z-20 flex justify-center pt-16"
               >
                 <div class="max-w-xs px-4">
-                  <h4 class="mb-3 text-xl font-semibold">{{ event.title }}</h4>
-                  <p class="text-sm leading-relaxed text-gray-600">
+                  <h4 class="mb-3 text-2xl font-semibold">{{ event.title }}</h4>
+                  <p class="text-base leading-relaxed text-gray-600">
                     {{ event.description }}
                   </p>
                 </div>
