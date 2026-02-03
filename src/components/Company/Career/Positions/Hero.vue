@@ -21,7 +21,7 @@ import steps from '../../../../assets/img/steps.png'
         <Navtop />
         
         <!-- Hero Content -->
-        <div class="pb-32 pt-16 md:pt-24 lg:pt-32">
+        <div class="pb-32 pt-16 md:pt-24 lg:pt-[116px]">
           <div class="max-w-7xl">
             <p class="text-[#FFB343] text-2xl mb-6 leading-7 tracking-[0.2px]">Career</p>
             <h1 class="text-6xl mb-12 font-semibold text-white leading-[72px] tracking-[-2.56px]">

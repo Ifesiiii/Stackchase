@@ -1,50 +1,58 @@
 <script setup>
-
+import { RouterLink } from 'vue-router';
 
 
 const positions = [
     {
         id: 1,
-        title: 'Mobile Developer',
+        title: 'Project Manager',
         location: 'Lagos',
         workType: 'Hybrid',
         employmentType: 'Full time'
     },
     {
         id: 2,
-        title: 'Full-stack Developer (Elixir)',
+        title: 'Full-stack Engineer',
         location: 'Lagos',
         workType: 'Hybrid',
         employmentType: 'Full time'
     },
     {
         id: 3,
-        title: 'Marketing Associate',
+        title: 'Front-end Engineer',
         location: 'Lagos',
         workType: 'Hybrid',
         employmentType: 'Full time'
     },
     {
         id: 4,
-        title: 'DevOps Engineer',
+        title: 'Social-media Media Manager',
         location: 'Lagos',
         workType: 'Hybrid',
         employmentType: 'Full time'
     },
+    {
+        id: 5,
+        title: 'Human Resource',
+        location: 'Lagos',
+        workType: 'Hybrid',
+        employmentType: 'Full time'
+    }
 ]
 </script>
 
 <template>
-    <div id="open-positions" class="font-heading max-w-7xl max-w-screen-[1366px] mx-auto mb-[100px] px-8 scroll-mt-8">
+    <div class="font-heading max-w-7xl max-w-screen-[1366px] mx-auto mb-[100px] sm:px-8">
       <h1 class="text-5xl font-bold mb-[68px] leading-[56px] tracking-[-0.5px]">
         Open Positions. <span>({{ positions.length }})</span>
       </h1>
 
-      <div class="space-y-0">
-        <div 
+      <div class="space-y-8">
+        <RouterLink 
           v-for="position in positions" 
           :key="position.id"
-          class="block border-b border-[#E7E7E7] py-8 first:pt-0 last:border-b-0"
+          :to="{ name: 'position-detail', params: { id: position.id } }"
+          class="block border-b border-[#E7E7E7] py-6 first:pt-0 last:border-b-0"
         >
           <div class="flex items-start gap-4">
             <span class="text-[#131313] text-[40px] font-semibold leading-[50px] tracking-[-0.5px]">
@@ -57,18 +65,9 @@ const positions = [
               <p class="text-[#616161] text-xl leading-7">
                 {{ position.location }} — {{ position.workType }} — {{ position.employmentType }}
               </p>
-              <p class="text-[#616161] text-xl leading-7">
-                Interested candidates are to send their resume to 
-                <a 
-                  href="mailto:careers@stackchase.com?subject=Application for {{ position.title }}" 
-                  class="text-[#006699] hover:underline transition-all"
-                >
-                  careers@stackchase.com
-                </a>
-              </p>
             </div>
           </div>
-        </div>
+        </RouterLink>
       </div>
     </div>
 </template>
