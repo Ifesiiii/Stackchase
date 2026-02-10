@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import Mcard from './Mcard.vue';
-import happy from '../../../assets/img/happy.png'
+import high from '../../../assets/img/high.png'
 import workspace from '../../../assets/img/workspace.png'
 
 
@@ -9,7 +9,7 @@ import workspace from '../../../assets/img/workspace.png'
 const goals = ref([
     {
     id: 1,
-    image: happy,
+    image: high,
     title: 'Mission',
     description: 'Create intuitive, reliable and scalable platforms that give people and organizations control, clarity and efficiency over their digital experiences.'
     },

@@ -9,7 +9,7 @@ const timelineEvents = [
     year: '2003',
     title: 'Lopworks Founded',
     description:
-      'Lopworks was established as an IT company delivering consulting and system integration services to enterprises across diverse industries.',
+      'Lopworks provides IT consulting and system integration services.',
     position: 'bottom',
     color: '#CCE0EB'
   },
@@ -17,7 +17,7 @@ const timelineEvents = [
     year: '2020',
     title: 'Stackchase Founded',
     description:
-      'Stackchase, a Lopworks Limited company, emerged from a need for autonomy—to design and develop reliable IT platforms that we own.',
+      'Stackchase was created to build and own reliable IT platforms.',
     position: 'top',
     color: '#80B3CC'
   },
@@ -25,7 +25,7 @@ const timelineEvents = [
     year: '2023',
     title: 'Started Ration Build',
     description:
-      'Started developing Ration as an on-premises email platform, first adopted by the Nigerian Army and then the Ogun State Government.',
+      'Developed Ration as an on-premise email platform.',
     position: 'bottom',
     color: '#2A80AA'
   },
@@ -33,7 +33,7 @@ const timelineEvents = [
     year: '2025',
     title: 'Ration Launched',
     description:
-      'Launching Ration Cloud as a secure messaging, meeting, and collaboration suite designed for modern teams.',
+      'Launched Ration Cloud, a secure collaboration suite.',
     position: 'top',
     color: '#069'
   }
@@ -41,7 +41,7 @@ const timelineEvents = [
 </script>
 
 <template>
-  <section class="font-heading bg-gray-50 px-4 sm:px-8 lg:px-16 py-12 sm:py-16 lg:py-[100px] max-w-screen-[1366px]">
+  <section class="font-heading bg-gray-50 px-4 sm:px-8 lg:px-16 md:py-12 sm:py-[56px] lg:py-[100px] max-w-screen-[1366px]">
     <div class="mx-auto max-w-7xl">
       <!-- Section Title -->
       <h2 class="px-4 text-center text-3xl sm:text-4xl md:text-5xl font-semibold text-[#00141F] mb-12 sm:mb-16 md:mb-20 leading-[38px] sm:leading-10">

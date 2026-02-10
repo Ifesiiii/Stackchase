@@ -9,9 +9,9 @@ defineProps({
 
 
 <template>
-  <div class="rounded-md overflow-hidden shadow-sm">
+  <div class="rounded-md overflow-hidden shadow-sm hover:border hover:border-[#CCE0EB] hover:shadow-lg hover:shaadow-[#CCE0EB]">
     <!-- Image Container -->
-    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-500">
+    <div class="flex items-center justify-center">
       <img
         :src="image"
         :alt="title"

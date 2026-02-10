@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router';
 <template>
   <div class="font-heading relative min-h-screen overflow-hidden h-auto lg:h-[816px] max-w-screen-[1366px]">
     
-    <div class="bg-no-repeat absolute inset-0"
+    <div class="bg-no-repeat absolute inset-0 h-[440px] lg:w-full lg:h-full"
       :style="{
         backgroundImage: `url(${background})`,
         backgroundSize: 'cover',
@@ -20,8 +20,8 @@ import { RouterLink } from 'vue-router';
     <Navbar />
     
     
-    <div class="relative container flex items-center min-h-[116px] lg:min-h-screen">
-      <div>
+    <div class="relative container flex items-center lg:min-h-screen">
+      <div class="mt-[52px] lg:mt-[116px]">
         <p class="text-[#FFB343] text-lg sm:text-[24px] mb-6 sm:mb-8 leading-[24px] sm:leading-[28px] tracking-[0.2px]">Reimagining standards for building secure, scalable and interoperable software</p>
         <h1 class="max-w-4xl text-3xl sm:text-[40px] md:text-[50px] lg:text-[60px] font-medium md:font-semibold lg:font-semibold text-white mb-8 sm:mb-12 lg:mb-[72px] leading-[40px] sm:leading-[50px] md:leading-[60px] lg:leading-[72px] tracking-[-1.5px] sm:tracking-[-2.56px]">
           Stackchase creates platforms engineered for scale, built with care and driven by purpose

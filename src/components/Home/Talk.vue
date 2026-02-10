@@ -1,7 +1,7 @@
 <script setup>
 import { useTalkAnimations } from '../../composables/useSmoothScroll'
 import { RouterLink } from 'vue-router'
-import workers from '../../assets/img/workers.png'
+import meeting2 from '../../assets/img/meeting2.png'
 import Button from './Button.vue'
 
 useTalkAnimations()
@@ -12,7 +12,7 @@ useTalkAnimations()
     <div class="absolute inset-0">
       <div 
         class="talk-background relative h-full bg-cover bg-center bg-no-repeat"
-        :style="{ backgroundImage: `url(${workers})` }"
+        :style="{ backgroundImage: `url(${meeting2})` }"
       ></div>
       <div class="absolute inset-0 bg-black opacity-40"></div>
     </div>
