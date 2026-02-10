@@ -1,36 +1,24 @@
-Hanken Grotesk Variable Font
-============================
+Manrope Variable Font
+=====================
 
-This download contains Hanken Grotesk as both variable fonts and static fonts.
+This download contains Manrope as both a variable font and static fonts.
 
-Hanken Grotesk is a variable font with this axis:
+Manrope is a variable font with this axis:
   wght
 
-This means all the styles are contained in these files:
-  HankenGrotesk-VariableFont_wght.ttf
-  HankenGrotesk-Italic-VariableFont_wght.ttf
+This means all the styles are contained in a single file:
+  Manrope-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Hanken Grotesk:
-  static/HankenGrotesk-Thin.ttf
-  static/HankenGrotesk-ExtraLight.ttf
-  static/HankenGrotesk-Light.ttf
-  static/HankenGrotesk-Regular.ttf
-  static/HankenGrotesk-Medium.ttf
-  static/HankenGrotesk-SemiBold.ttf
-  static/HankenGrotesk-Bold.ttf
-  static/HankenGrotesk-ExtraBold.ttf
-  static/HankenGrotesk-Black.ttf
-  static/HankenGrotesk-ThinItalic.ttf
-  static/HankenGrotesk-ExtraLightItalic.ttf
-  static/HankenGrotesk-LightItalic.ttf
-  static/HankenGrotesk-Italic.ttf
-  static/HankenGrotesk-MediumItalic.ttf
-  static/HankenGrotesk-SemiBoldItalic.ttf
-  static/HankenGrotesk-BoldItalic.ttf
-  static/HankenGrotesk-ExtraBoldItalic.ttf
-  static/HankenGrotesk-BlackItalic.ttf
+in those cases you can use the static font files for Manrope:
+  static/Manrope-ExtraLight.ttf
+  static/Manrope-Light.ttf
+  static/Manrope-Regular.ttf
+  static/Manrope-Medium.ttf
+  static/Manrope-SemiBold.ttf
+  static/Manrope-Bold.ttf
+  static/Manrope-ExtraBold.ttf
 
 Get started
 -----------
