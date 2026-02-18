@@ -4,7 +4,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                heading: ['Hanken Grotesk']
+                heading: ['Manrope']
             },
             backgroundImage: {
                 'bg-hero': "url('../assets/img/Background.png')"
