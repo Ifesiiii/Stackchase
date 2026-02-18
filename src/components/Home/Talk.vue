@@ -18,7 +18,8 @@ useTalkAnimations()
     </div>
 
     <!-- Content Container -->
-    <div class="talk-content relative z-10 flex flex-col justify-between h-full p-6 sm:p-8 lg:px-[80px] lg:py-[80px] lg:pb-[100px]">
+     <div class="relative max-w-8xl z-10 h-full">
+      <div class="talk-content flex flex-col justify-between h-full p-6 sm:p-8 lg:px-[80px] lg:py-[80px] lg:pb-[100px] mx-auto">
       <!-- Top - Heading -->
       <div>
         <h2 class="max-w-full lg:w-[800px] text-2xl sm:text-3xl md:text-4xl lg:text-[56px] font-medium text-white leading-[32px] sm:leading-[40px] md:leading-[48px] lg:leading-[56px] tracking-[-0.2px] sm:tracking-[-0.28px]">
@@ -53,5 +54,7 @@ useTalkAnimations()
         </div>
       </div>
     </div>
+    </div>
+    
   </section>
 </template>

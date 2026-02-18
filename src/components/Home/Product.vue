@@ -43,7 +43,7 @@ const products = [
         <div
           v-for="product in products"
           :key="product.id"
-          class="product-card"
+          class="product-card h-full"
         >
           <Tile
             :image="product.image"

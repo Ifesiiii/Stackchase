@@ -9,7 +9,7 @@ defineProps({
 
 
 <template>
-  <div class="rounded-md overflow-hidden shadow-sm hover:border hover:border-[#CCE0EB] hover:shadow-lg hover:shaadow-[#CCE0EB]">
+  <div class="rounded-md overflow-hidden shadow-sm hover:border hover:border-[#CCE0EB] hover:shadow-lg hover:shaadow-[#CCE0EB] flex flex-col h-full">
     <!-- Image Container -->
     <div class="flex items-center justify-center">
       <img
