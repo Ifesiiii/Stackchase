@@ -11,12 +11,12 @@ import people from '../../../assets/img/people.png'
           <!-- Left Column -->
           <div>
             <h2 class="text-5xl font-semibold text-[#00141F] leading-[56px] tracking-[-0.5px]">
-              Built by People Who<br> Care About Progress 
+              Building Better <br> Systems Starts with <br>Us
             </h2>
           </div>
 
           <!-- Right Column -->
-          <div class="text-2xl space-y-6 text-[#00141F] leading-[30px]">
+          <div class="text-xl space-y-6 text-[#00141F] leading-[30px]">
             <p>
               Every engineer, designer, and strategist at Stackchase shares one thing in common: a relentless drive to create technologies that make businesses better, faster, and more connected.
             </p>

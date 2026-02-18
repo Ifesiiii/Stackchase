@@ -13,23 +13,24 @@
       <div class="grid md:grid-cols-2 gap-14 text-[#424242]">
         <!-- Left Column -->
         <div class="space-y-6">
-          <p class="text-2xl leading-[30px]">
-            Founded in 2020, Stackchase began with a simple<br> conviction: <span class="font-semibold text-[#424242]">technology should empower, not restrict.</span><br> A small team driven by curiosity became a company<br> focused on giving businesses control, reliability, and<br> room to grow.
+          <p class="text-xl leading-[30px]">
+            Founded in 2020, Stackchase began with a simple conviction: <span class="font-semibold text-[#424242]">technology should empower, not restrict.</span><br>
+            A small team driven by curiosity became a company focused on giving businesses control, reliability, and room to grow.
           </p>
           
-          <p class="text-2xl leading-[30px]">
-            We saw organizations wrestle with disconnected tools<br> and one-size-fits-all systems that forced people to adapt.<br> Stackchase flips that script.
+          <p class="text-xl leading-[30px]">
+            We saw organizations wrestle with disconnected tools and one-size-fits-all systems that forced people to adapt. Stackchase flips that script.
           </p>
         </div>
 
         <!-- Right Column -->
         <div class="space-y-6">
-          <p class="text-2xl leading-[30px]">
-            Our products—Ration, Singular API and Musi.ng—form<br> an ecosystem of scalable platforms for a more<br> connected, self-reliant future.
+          <p class="text-xl leading-[30px]">
+            Our products—Ration, Singular API and Musi.ng—form an ecosystem of scalable platforms for a more connected, self-reliant future.
           </p>
           
-          <p class="text-2xl leading-[30px]">
-            We are reimagining how tech serves people, businesses,<br> and communities. Each product reflects one principle:<br> precision, purpose, and progress through engineering excellence. When technology truly empowers, innovation follows.
+          <p class="text-xl leading-[30px]">
+            We are reimagining how tech serves people, businesses, and communities. Each product reflects one principle: precision, purpose, and progress through engineering excellence. When technology truly empowers, innovation follows.
           </p>
         </div>
       </div>

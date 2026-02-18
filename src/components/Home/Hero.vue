@@ -23,7 +23,7 @@ import { RouterLink } from 'vue-router';
     <div class="relative container flex items-center lg:min-h-screen">
       <div class="mt-[40px] lg:mt-[127px] mb-[81px] lg:mb-[165px]">
         <p class="text-[#FFB343] text-lg sm:text-[24px] mb-6 sm:mb-8 leading-[24px] sm:leading-[28px] tracking-[0.2px]">Reimagining standards for building secure, scalable and interoperable software</p>
-        <h1 class="max-w-4xl text-3xl sm:text-[40px] md:text-[50px] lg:text-[60px] font-medium md:font-semibold lg:font-semibold text-white mb-8 sm:mb-12 lg:mb-[72px] leading-[40px] sm:leading-[50px] md:leading-[60px] lg:leading-[72px] tracking-[-1.5px] sm:tracking-[-2.56px]">
+        <h1 class="max-w-5xl text-3xl sm:text-[40px] md:text-[50px] lg:text-[60px] font-medium md:font-semibold lg:font-semibold text-white mb-8 sm:mb-12 lg:mb-[72px] leading-[40px] sm:leading-[50px] md:leading-[60px] lg:leading-[72px] tracking-[-1.5px] sm:tracking-[-2.56px]">
           Stackchase creates platforms engineered for scale, built with care and driven by purpose
         </h1>
         <RouterLink to="/company/about">

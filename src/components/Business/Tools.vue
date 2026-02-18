@@ -17,8 +17,8 @@
 
         <!-- Right Column - Description -->
         <div class="flex items-center">
-          <p class="text-2xl leading-[30px] text-[#00141F]">
-            Analytics, and more. But when those tools don’t connect<br> seamlessly, productivity slows and data silos form.<br> Stackchase solves this by creating integrated, scalable<br> platforms that empower teams and accelerate outcomes.
+          <p class="text-xl leading-[30px] text-[#00141F]">
+            analytics, and more. But when those tools don’t connect seamlessly, productivity slows and data silos form. Stackchase solves this by creating integrated, scalable platforms that empower teams and accelerate outcomes.
           </p>
         </div>
       </div>
@@ -26,32 +26,32 @@
       <!-- Cards Section -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1: With Ration -->
-        <div class="bg-white rounded-lg p-8 border border-[border-[#E7E7E7]">
-          <h3 class="text-[28px] mb-4 text-[#131313] leading-8 tracking-[-0.14px]">
+        <div class="bg-white rounded-lg p-6 border border-[border-[#E7E7E7]">
+          <h3 class="text-[28px] font-bold mb-4 text-[#131313] leading-8 tracking-[-0.14px]">
             With Ration
           </h3>
           <p class="text-xl leading-7 text-[#131313]">
-            All-in-one messaging, meeting, and<br> collaboration suite that enhances<br> communication and workflow efficiency<br> for distributed teams.
+            All-in-one messaging, meeting, and collaboration suite that enhances communication and workflow efficiency for distributed teams.
           </p>
         </div>
 
         <!-- Card 2: With Singular API -->
-        <div class="bg-white rounded-lg p-8 border border-[border-[#E7E7E7]]">
-          <h3 class="text-[28px] mb-4 text-[#131313] leading-8 tracking-[-0.14px]">
+        <div class="bg-white rounded-lg p-6 border border-[border-[#E7E7E7]]">
+          <h3 class="text-[28px] font-bold mb-4 text-[#131313] leading-8 tracking-[-0.14px]">
             With Singular API
           </h3>
           <p class="text-xl leading-7 text-[#131313]">
-            Integrates multiple data sources into<br> one interface, simplifying analytics and<br> system management. Ideal for<br> businesses with many digital parts.
+            Integrates multiple data sources into one interface, simplifying analytics and system management. Ideal for businesses with many digital parts.
           </p>
         </div>
 
         <!-- Card 3: With Musi.ng -->
-        <div class="bg-white rounded-lg p-8 border border-[border-[#E7E7E7]">
-          <h3 class="text-[28px] mb-4 text-[#131313] leading-8 tracking-[-0.14px]">
+        <div class="bg-white rounded-lg p-6 border border-[border-[#E7E7E7]">
+          <h3 class="text-[28px] font-bold mb-4 text-[#131313] leading-8 tracking-[-0.14px]">
             With Musi.ng
           </h3>
           <p class="text-xl leading-7 text-[#131313]">
-            A community-driven engagement<br> platform for brands to connect with<br> audiences through authentic content and<br> storytelling (coming soon).
+            A community-driven engagement platform for brands to connect with audiences through authentic content and storytelling (coming soon).
           </p>
         </div>
       </div>

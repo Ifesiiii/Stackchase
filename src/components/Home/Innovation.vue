@@ -119,7 +119,7 @@ onUnmounted(() => {
             Engineering what's next
           </h3>
           <p class="text-[#131313] text-xl leading-6">
-            Stackchase creates platforms that<br> challenge convention and shape the<br> future of connected work.
+            Stackchase creates platforms that challenge convention and shape the future of connected work.
           </p>
         </div>
 
@@ -128,7 +128,7 @@ onUnmounted(() => {
             Intelligent Innovation
           </h3>
           <p class="text-[#131313] text-xl leading-6">
-            Stackchase creates platforms that<br> challenge convention and shape the<br> future of connected work.
+            We build forward-thinking systems engineered for reliability, scalability, and real impact.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ onUnmounted(() => {
             Built for Control
           </h3>
           <p class="text-[#131313] text-xl leading-6">
-            We design systems that give businesses<br> full control that keep data and decisions<br> close to home.
+            We design systems that give businesses full control that keep data and decisions close to home.
           </p>
         </div>
       </div>
