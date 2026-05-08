@@ -9,7 +9,6 @@ import KitView from '../views/KitView.vue'
 import GovView from '../views/GovView.vue'
 import BusiView from '../views/BusiView.vue'
 import PolicyView from '../views/PolicyView.vue'
-import RationView from '../views/RationView.vue'
 import ApiView from '../views/ApiView.vue'
 import MusiView from '../views/MusiView.vue'
 import NewsView from '../views/NewsView.vue'
@@ -72,10 +71,6 @@ const router = createRouter({
         {   path: '/policy',
             name: 'policy',
             component: PolicyView,
-        },
-        {   path: '/products/ration',
-            name: 'ration',
-            component: RationView,
         },
         {   path: '/products/api',
             name: 'api',

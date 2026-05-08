@@ -8,6 +8,7 @@ const showProductsDropdown = ref(false)
 const isMobileMenuOpen = ref(false)
 const showMobileCompanyDropdown = ref(false)
 const showMobileProductsDropdown = ref(false)
+const rationUrl = import.meta.env.VITE_RATION_URL
 
 
 // const isActiveLink = (routePath) => {
@@ -25,7 +26,7 @@ const companyLinks = [
 ]
 
 const productLinks = [
-  { name: 'Ration', path: '/products/ration' },
+  { name: 'Ration', path: rationUrl, external: true },
   { name: 'Singular API', path: '/products/api' },
   { name: 'Musi.ng', path: '/products/musi' }
 ]
@@ -117,14 +118,15 @@ const closeMobileMenu = () => {
               v-show="showProductsDropdown"
               class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-[#0C1723] rounded-lg shadow-xl py-2 z-50"
             >
-              <RouterLink
-                v-for="link in productLinks"
-                :key="link.path"
-                :to="link.path"
-                class="block px-6 py-3 text-white hover:text-[#E5E5E5] hover:bg-[#243447] transition text-left"
+            <component
+              :is="link.external ? 'a' : RouterLink"
+              v-for="link in productLinks"
+              :key="link.name"
+              v-bind="link.external ? { href: link.path, target: '_blank', rel: 'noopener noreferrer' } : { to: link.path }"
+              class="block px-6 py-3 text-white hover:text-[#E5E5E5] hover:bg-[#243447] transition text-left"
               >
                 {{ link.name }}
-              </RouterLink>
+            </component>
             </div>
           </Transition>
         </div>
@@ -244,15 +246,16 @@ const closeMobileMenu = () => {
               leave-to-class="opacity-0 -translate-y-2"
             >
               <div v-show="showMobileProductsDropdown" class="pl-4 space-y-2">
-                <RouterLink
-                  v-for="link in productLinks"
-                  :key="link.path"
-                  :to="link.path"
-                  @click="closeMobileMenu"
-                  class="block py-3 text-[#E5E5E5] hover:text-white transition"
+              <component
+                :is="link.external ? 'a' : RouterLink"
+                v-for="link in productLinks"
+                :key="link.name"
+                v-bind="link.external ? { href: link.path, target: '_blank', rel: 'noopener noreferrer' } : { to: link.path }"
+                @click="closeMobileMenu"
+                class="block py-3 text-[#E5E5E5] hover:text-white transition"
                 >
                   {{ link.name }}
-                </RouterLink>
+            </component>
               </div>
             </Transition>
           </div>
