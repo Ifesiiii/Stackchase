@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { RouterLink } from 'vue-router'
-import { useInnovationAnimations } from '../../composables/useSmoothScroll'
+import { useInnovationAnimations } from '../../Composables/useSmoothScroll'
 import SmallCard from './Scard.vue'
 import bg from '../../assets/img/women2.png'
 import bg2 from '../../assets/img/Dworking.png'

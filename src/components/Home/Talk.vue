@@ -1,5 +1,5 @@
 <script setup>
-import { useTalkAnimations } from '../../composables/useSmoothScroll'
+import { useTalkAnimations } from '../../Composables/useSmoothScroll'
 import { RouterLink } from 'vue-router'
 import meeting2 from '../../assets/img/meeting2.png'
 import Button from './Button.vue'

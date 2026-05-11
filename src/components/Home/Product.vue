@@ -1,5 +1,5 @@
 <script setup>
-import { useProductAnimations } from '../../composables/useSmoothScroll'
+import { useProductAnimations } from '../../Composables/useSmoothScroll'
 import Tile from './Tile.vue'
 import ration from '../../assets/img/ration.png'
 import hawk from '../../assets/img/Redhawk.png'

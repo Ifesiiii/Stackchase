@@ -1,5 +1,5 @@
 <script setup>
-import { useTimelineAnimations } from '../../composables/useSmoothScroll'
+import { useTimelineAnimations } from '../../Composables/useSmoothScroll'
 
 
 useTimelineAnimations()
