@@ -2,7 +2,7 @@
 import { onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useSmoothScroll } from '../composables/useSmoothScroll'
+import { useSmoothScroll } from '../Composables/useSmoothScroll'
 
 import Hero from '../components/Home/Hero.vue'
 import Timeline from '../components/Home/Timeline.vue'
