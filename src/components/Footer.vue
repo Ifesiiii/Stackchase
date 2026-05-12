@@ -1,6 +1,10 @@
 <script setup>
 import logo from '../assets/img/logo2.png'
 import { RouterLink } from 'vue-router';
+
+
+
+const rationUrl = import.meta.env.VITE_RATION_URL
 </script>
 
 
@@ -62,7 +66,7 @@ import { RouterLink } from 'vue-router';
             <h3 class="text-lg md:text-xl leading-6 font-semibold mb-4 md:mb-6">Support</h3>
             <ul class="space-y-2 md:space-y-3">
               <li>
-                <RouterLink to="/product-support" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">Product support</RouterLink>
+                <a :href="`${rationUrl}/support`" target="_blank" rel="noopener noreferrer" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">Product support</a>
               </li>
               <li>
                 <RouterLink to="/Contact" class="text-base md:text-xl text-[#E5E5E5] hover:text-white transition-colors">Contact Us</RouterLink>
